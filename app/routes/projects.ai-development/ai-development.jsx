@@ -26,9 +26,9 @@ import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import styles from './ai-development.module.css';
 
-const title = 'AI-Powered Product Development';
+const title = 'Building and Shipping Products';
 const description =
-  'Four products designed and shipped with AI as my engineering partner. From concept to launch, each one solving a real problem for real people.';
+  'Four products I designed and shipped, using LLM-based coding tools as my engineering partner. Each one solves a concrete problem for the people who use it.';
 const roles = ['Product', 'AI Development', 'Design', 'Builder'];
 
 export const meta = () => {
@@ -51,11 +51,10 @@ export const AiDevelopment = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>nathank.build</ProjectSectionHeading>
                   <ProjectSectionText>
-                    The site you&apos;re on right now. Built with Remix, Three.js, custom
-                    GLSL shaders, and deployed to Cloudflare, all using Claude Code as
-                    my engineering co-pilot. Product thinking applied to personal branding:
-                    responsive design, animated transitions, dark/light themes, and
-                    performance-first architecture.
+                    The site you&apos;re on right now. Built with Remix, Three.js, and
+                    custom GLSL shaders, deployed to Cloudflare. I used Claude Code as
+                    my engineering partner throughout. It has responsive layout, animated
+                    transitions, dark and light themes, and is tuned for performance.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

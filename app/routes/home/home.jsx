@@ -170,7 +170,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="Scaling Agile: 20 to 80+ Builders"
-        description="As Agile Coach at Flywheel/WP Engine, I grew the Scrum organization from 20 to 80-plus and trained client teams across four countries on Scrum, Kanban, and release planning."
+        description="As Agile Coach at Flywheel/WP Engine, I grew the Scrum organization from 20 to 80-plus and coached client teams across four countries on Scrum, Kanban, and release planning. I learned the craft from Scrum co-creator Jeff Sutherland and Mike Cohn."
         buttonText="How I scaled it"
         buttonLink="/projects/slice"
         decorativeLabel="Scaled"

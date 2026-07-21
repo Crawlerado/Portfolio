@@ -12,7 +12,7 @@ import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
 import styles from './slice.module.css';
 
-const title = 'Scaling Agile — 20 to 80+ Builders';
+const title = 'Scaling Agile: 20 to 80+ Builders';
 const description =
   'As Agile Coach at Flywheel/WP Engine, I scaled the Scrum organization fourfold. Certified by Jeff Sutherland and Mike Cohn, I trained thousands of clients across four countries on Agile, Scrum, Kanban, and release planning.';
 const roles = ['Agile Coach', 'Scrum Master', 'Training', 'Organizational Scaling'];
@@ -57,10 +57,9 @@ export const Slice = () => {
                   <ProjectSectionText>
                     When I joined Flywheel as Agile Coach, the engineering team was around
                     20 people running a handful of Scrum teams. Over the next several years,
-                    I helped scale the organization to 80+ builders while keeping the culture
-                    collaborative and the delivery cadence tight. That meant evolving
-                    team structures, introducing cross-team coordination rituals, and
-                    coaching leaders through the growing pains that come with rapid growth.
+                    I helped scale it to 80+ builders. That work meant evolving team
+                    structures and adding cross-team coordination. I also coached leaders
+                    through the problems that come with fast growth.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -98,10 +97,9 @@ export const Slice = () => {
                   <ProjectSectionText>
                     Beyond internal coaching, I trained thousands of clients across four
                     countries on Agile, Scrum, Kanban, and release planning. These were
-                    hands-on workshops designed to give teams practical tools they could
-                    apply immediately. Whether it was a startup trying Scrum for the first
-                    time or an enterprise scaling across departments, the goal was always
-                    the same: help people ship better work together.
+                    hands-on workshops with practical tools teams could apply right away.
+                    The clients ranged from startups trying Scrum for the first time to
+                    enterprises scaling across departments.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -117,11 +115,11 @@ export const Slice = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Certification & Growth</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Certified by Jeff Sutherland (co-creator of Scrum) and Mike Cohn
-                    (one of the founders of the Scrum Alliance), I brought credibility
-                    and depth to every engagement. But the certifications were just a
-                    starting point. The real education came from years of coaching teams
-                    through the messy reality of building software at scale.
+                    I hold Scrum certifications from Jeff Sutherland, co-creator of Scrum,
+                    and Mike Cohn, one of the founders of the Scrum Alliance. The
+                    certifications were a starting point. Most of what I learned came from
+                    years of coaching teams through the reality of building software at
+                    scale.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

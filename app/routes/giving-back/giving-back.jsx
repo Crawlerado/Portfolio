@@ -80,15 +80,15 @@ export const GivingBack = () => {
                     Vice President, Board of Directors &middot; Omaha, NE &middot; 2019–2022
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    VP of the board for a nonprofit that gives Omahans in need
-                    a bike to own, a shop to wrench in, and the skills to keep
-                    it rolling. The org runs earn-a-bike workshops, repair
+                    VP of the board for a nonprofit that gives Omahans in need a
+                    bike to own, shop space to work in, and help learning to
+                    maintain it. The org runs earn-a-bike workshops, repair
                     classes, community rides, art fundraisers, and dinners.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    Helped keep the shop open through COVID with half the
-                    staff, and wrote grants to keep the lights on during the
-                    hardest stretch the org had faced.
+                    Helped keep the shop open through COVID with half the staff,
+                    and wrote grants that funded operations through a difficult
+                    stretch.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -124,10 +124,9 @@ export const GivingBack = () => {
                     challenges.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    Nine years of showing up matters. Research backs it up:
-                    consistent mentoring improves grades, retention, and
-                    emotional wellbeing. But mostly it gives a kid someone
-                    steady in their corner.
+                    Nine years of weekly meetings. Research links consistent
+                    mentoring to better grades, retention, and wellbeing.
+                    Mostly it means a kid has someone steady in their corner.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -168,9 +167,9 @@ export const GivingBack = () => {
                     We also supported{' '}
                     <Link href="https://incommoncd.org">inCOMMON</Link>, a
                     company-sponsored nonprofit working to break the cycle of
-                    poverty at a neighborhood level. Their belief is simple: no
-                    one should face a lifetime of poverty because of the zip
-                    code they were born into.
+                    poverty at a neighborhood level. Its goal is that no one
+                    faces lifelong poverty because of the zip code they were
+                    born into.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

@@ -28,8 +28,9 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I build as well as plan. I write and ship code, prototype with LLM-based tools, and
-      stay close to how the product actually gets made. I've trained client teams across
-      four countries on Scrum and agile delivery. Feel free to{' '}
+      stay close to how the product actually gets made. I trained under Scrum co-creator
+      Jeff Sutherland and Mike Cohn, and have coached client teams across four countries.
+      Feel free to{' '}
       <Link href={`mailto:${config.email}`}>say hello</Link>.
     </Text>
   </Fragment>
