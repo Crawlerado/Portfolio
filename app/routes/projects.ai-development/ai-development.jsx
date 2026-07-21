@@ -21,6 +21,7 @@ import {
   ProjectTextRow,
 } from '~/layouts/project';
 import { Image } from '~/components/image';
+import { Link } from '~/components/link';
 import { Fragment } from 'react';
 import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
@@ -28,7 +29,7 @@ import styles from './ai-development.module.css';
 
 const title = 'Building and Shipping Products';
 const description =
-  'Four products I designed and shipped, using LLM-based coding tools as my engineering partner. Each one solves a concrete problem for the people who use it.';
+  'Live sites and apps I designed and shipped, using LLM-based coding tools as my engineering partner. Each one solves a concrete problem for the people who use it.';
 const roles = ['Product', 'AI Development', 'Design', 'Builder'];
 
 export const meta = () => {
@@ -64,14 +65,61 @@ export const AiDevelopment = () => {
                   width={1280}
                   height={862}
                   placeholder={portfolioSitePlaceholder}
-                  alt="nathank.build portfolio site showing the hero section with Leader + Chief of Staff headline"
+                  alt="nathank.build portfolio site hero section"
                   sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
                 />
               </div>
             </div>
           </ProjectSectionContent>
         </ProjectSection>
-        {/* StarkWeather, Grabbl, and SleepMat sections hidden until launch */}
+        <ProjectSection padding="top" className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow noMargin>
+              <ProjectSectionHeading>
+                <Link href="https://odditycycles.com">odditycycles.com</Link>
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                The brand site for Oddity Cycles, where I work as Chief of Staff.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <ProjectTextRow>
+              <ProjectSectionHeading>
+                <Link href="https://crawlerado.com">crawlerado.com</Link>
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                The site for Crawlerado, a Northern Colorado bikepacking community I
+                founded.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <ProjectTextRow>
+              <ProjectSectionHeading>
+                <Link href="https://crawlerado.com/explore">Find Unpaved</Link>
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                An interactive map for finding gravel and unpaved roads to ride, at
+                crawlerado.com/explore.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <ProjectTextRow>
+              <ProjectSectionHeading>
+                <Link href="https://sleepmat.app">sleepmat.app</Link>
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                An offline-first app that helps people without stable housing find nearby
+                resources.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <ProjectTextRow>
+              <ProjectSectionHeading>
+                <Link href="https://hellokristin.co">hellokristin.co</Link>
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                A portfolio site for a communications and marketing professional, with
+                paginated photo galleries.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
       </ProjectContainer>
       <Footer />
     </Fragment>

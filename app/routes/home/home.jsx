@@ -98,7 +98,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Building and Shipping Products"
-        description="Four products I designed and shipped end to end: this site, a weather app, a gravel-road discovery tool, and a resource app for people without housing. I write the code, using LLM-based tools as my engineering partner."
+        description="Live sites and apps I designed and shipped: nathank.build, odditycycles.com, crawlerado.com and its Find Unpaved gravel map, sleepmat.app, and hellokristin.co. I write the code, using LLM-based tools as my engineering partner."
         buttonText="View projects"
         buttonLink="/projects/ai-development"
         decorativeLabel="Shipped"
