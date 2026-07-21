@@ -79,7 +79,7 @@ export const AiDevelopment = () => {
                 <Link href="https://odditycycles.com">odditycycles.com</Link>
               </ProjectSectionHeading>
               <ProjectSectionText>
-                The brand site for Oddity Cycles, where I work as Chief of Staff.
+                The brand site for Oddity Cycles.
               </ProjectSectionText>
             </ProjectTextRow>
             <ProjectTextRow>
