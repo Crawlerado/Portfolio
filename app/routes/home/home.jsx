@@ -121,8 +121,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         previewMaxWidth="450px"
-        title="PetFriendly — Chief of Staff"
-        description="Recruited by the CEO to co-run the company as his left hand man. Oversaw operations, managed the development team, ran the leadership team, and tripled the product offering at this delightful pet wellness startup."
+        title="PetFriendly: Chief of Staff"
+        description="I co-ran a pet-wellness startup alongside the CEO. Led an 11-person engineering team, ran operations and the leadership team, and tripled the product offering."
         buttonText="How I ran it"
         buttonLink="/projects/petfriendly"
         decorativeLabel="Ran"
@@ -144,8 +144,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Flywheel — Product Leadership"
-        description="Led the delivery team for Flywheel's second-ever product offering. Drove the customer-led 'Local Pro' roadmap with user research, go-to-market strategy, and cross-functional collaboration across engineering, design, and marketing."
+        title="Flywheel: Product Leadership"
+        description="I led delivery for Flywheel's second product, Local Pro. Ran the roadmap from user research through go-to-market, across engineering, design, and marketing."
         buttonText="How I led it"
         buttonLink="/projects/gamestack"
         decorativeLabel="Led"
@@ -169,8 +169,8 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Scaling Agile — 20 to 80+ Builders"
-        description="As Agile Coach at Flywheel/WP Engine, I scaled the Scrum organization fourfold. Certified by Jeff Sutherland and Mike Cohn, I trained thousands of clients across four countries on Agile, Scrum, Kanban, and release planning."
+        title="Scaling Agile: 20 to 80+ Builders"
+        description="As Agile Coach at Flywheel/WP Engine, I grew the Scrum organization from 20 to 80-plus and trained client teams across four countries on Scrum, Kanban, and release planning."
         buttonText="How I scaled it"
         buttonLink="/projects/slice"
         decorativeLabel="Scaled"
@@ -190,7 +190,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFive.current)}
         index={5}
         title="Giving Back"
-        description="None of it means much without giving back. Board leadership, mentoring a kid for nine years, food drives, shelter volunteering. Showing up for people facing things most of us never have to think about."
+        description="Board leadership, mentoring the same kid for nine years, food drives, and shelter volunteering. Showing up matters."
         buttonText="See the work"
         buttonLink="/giving-back"
         decorativeLabel="Gave"
@@ -211,7 +211,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectSix.current)}
         index={6}
         title="Crawlerado Bikepacking"
-        description="Northern Colorado bikepacking community I founded. A web bikepacking resource landing page with interactive gravel road discovery, gear checklists, and ride resources. Get equipped, find your route, and ride with us."
+        description="A bikepacking community I founded in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. Built and shipped solo."
         buttonText="Visit crawlerado.com"
         buttonLink="https://crawlerado.com"
         decorativeLabel="Rode"
@@ -232,7 +232,7 @@ export const Home = () => {
         index={7}
         overlay={<AudioWaveform />}
         title="Audio Engineer"
-        description="Before product, I made records. Engineer, mixer, mastering, and studio musician with credits on over 50 releases. Years behind the console and on stage, shaping sound for bands across the Midwest."
+        description="Before product, I made records. Engineering, mixing, mastering, and session work on 50-plus releases across the Midwest."
         buttonText="View discography"
         buttonLink="https://www.discogs.com/artist/1196680-Nathan-Knisley"
         decorativeLabel="Mixed"
