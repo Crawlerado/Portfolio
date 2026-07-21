@@ -20,8 +20,12 @@ import { Navbar } from '~/layouts/navbar';
 import { Progress } from '~/components/progress';
 import config from '~/config.json';
 import styles from './root.module.css';
-import './reset.module.css';
-import './global.module.css';
+// Plain (non-module) global CSS. These were .module.css with only :global()
+// rules; as side-effect module imports the bundler tree-shook them out
+// (package.json sideEffects), dropping the base layer — body font-family,
+// overflow-x guard, box-sizing. Plain .css side-effect imports are retained.
+import './reset.css';
+import './global.css';
 
 export const links = () => [
   {

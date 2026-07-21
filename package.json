@@ -4,7 +4,10 @@
   "description": "Portfolio site for Nathan Knisley",
   "repository": "https://github.com/nathanisley/portfolio.git",
   "author": "Nathan Knisley",
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css",
+    "**/*.css"
+  ],
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
