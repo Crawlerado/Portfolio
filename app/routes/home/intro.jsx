@@ -172,9 +172,6 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   ))}
                 </div>
               </Heading>
-              <p className={styles.tagline} data-visible={visible}>
-                Relocating to the Netherlands, Denmark, or Germany.
-              </p>
             </header>
             <RouterLink
               to="/#project-1"

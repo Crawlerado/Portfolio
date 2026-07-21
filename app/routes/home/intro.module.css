@@ -127,18 +127,6 @@
   position: relative;
 }
 
-.tagline {
-  margin: var(--spaceL) 0 0;
-  color: var(--textLight);
-  font-size: var(--fontSizeBodyL);
-  opacity: 0;
-  transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.4s;
-
-  &[data-visible='true'] {
-    opacity: 1;
-  }
-}
-
 .row {
   display: flex;
   flex-direction: row;
