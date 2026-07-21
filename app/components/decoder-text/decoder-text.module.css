@@ -9,10 +9,9 @@
   .glyph {
     opacity: 0.8;
     font-weight: var(--fontWeightRegular);
-    /* Inherit the heading's font so runic scramble glyphs match the final
-       text metrics (was the template's CJK/katakana stack, which oversized
-       the runes). */
-    font-family: inherit;
+    /* Embedded Noto Sans Runic gives every heading the same runic metrics
+       (no per-device fallback size drift) and 100% glyph coverage. */
+    font-family: var(--runicFontStack);
     line-height: 0;
   }
 
