@@ -30,7 +30,7 @@ import styles from './ai-development.module.css';
 const title = 'Building and Shipping Products';
 const description =
   'Live sites and apps I designed and shipped, using LLM-based coding tools as my engineering partner. Each one solves a concrete problem for the people who use it.';
-const roles = ['Product', 'AI Development', 'Design', 'Builder'];
+const roles = ['Product', 'ML/AI Development', 'Design', 'Builder'];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -71,7 +71,7 @@ export const AiDevelopment = () => {
             <Image
               srcSet={`${nathankSite} 1400w`}
               width={1400}
-              height={886}
+              height={840}
               placeholder={nathankSitePlaceholder}
               alt="nathank.build portfolio site"
               sizes={sizes}
@@ -85,48 +85,6 @@ export const AiDevelopment = () => {
         </Product>
 
         <Product
-          name="odditycycles.com"
-          href="https://odditycycles.com"
-          alternate
-          image={
-            <Image
-              srcSet={`${oddity} 1400w`}
-              width={1400}
-              height={886}
-              placeholder={oddityPlaceholder}
-              alt="odditycycles.com storefront"
-              sizes={sizes}
-            />
-          }
-        >
-          The brand and online store for Oddity Cycles. It gives the company a clean home
-          to show its frames and sell parts, with a straightforward path from browsing to
-          checkout. The layout stays plain on purpose so the bikes lead. It loads quickly
-          and reads well on phones as well as desktops.
-        </Product>
-
-        <Product
-          name="crawlerado.com"
-          href="https://crawlerado.com"
-          image={
-            <Image
-              src={crawleradoVideo}
-              width={1200}
-              height={772}
-              placeholder={crawleradoPlaceholder}
-              alt="crawlerado.com bikepacking community site"
-              sizes={sizes}
-              noPauseButton
-            />
-          }
-        >
-          The home for Crawlerado, a Northern Colorado bikepacking community I founded. It
-          welcomes new riders, points them to routes and gear, and gives the group a place
-          to gather. The tone is deliberately rough, built for people who ride dirt.
-          Everything is fast and mobile-first, since it gets opened on the trail.
-        </Product>
-
-        <Product
           name="Find Unpaved"
           href="https://crawlerado.com/explore"
           alternate
@@ -134,7 +92,7 @@ export const AiDevelopment = () => {
             <Image
               srcSet={`${findUnpaved} 1400w`}
               width={1400}
-              height={924}
+              height={876}
               placeholder={findUnpavedPlaceholder}
               alt="Find Unpaved gravel-road discovery map"
               sizes={sizes}
@@ -155,7 +113,7 @@ export const AiDevelopment = () => {
             <Image
               srcSet={`${sleepmatWeb} 1400w`}
               width={1400}
-              height={924}
+              height={876}
               placeholder={sleepmatWebPlaceholder}
               alt="sleepmat.app resource finder"
               sizes={sizes}
@@ -170,6 +128,48 @@ export const AiDevelopment = () => {
         </Product>
 
         <Product
+          name="crawlerado.com"
+          href="https://crawlerado.com"
+          alternate
+          image={
+            <Image
+              src={crawleradoVideo}
+              width={1200}
+              height={688}
+              placeholder={crawleradoPlaceholder}
+              alt="crawlerado.com bikepacking community site"
+              sizes={sizes}
+              noPauseButton
+            />
+          }
+        >
+          The home for Crawlerado, a Northern Colorado bikepacking community I founded. It
+          welcomes new riders, points them to routes and gear, and gives the group a place
+          to gather. The tone is deliberately rough, built for people who ride dirt.
+          Everything is fast and mobile-first, since it gets opened on the trail.
+        </Product>
+
+        <Product
+          name="odditycycles.com"
+          href="https://odditycycles.com"
+          image={
+            <Image
+              srcSet={`${oddity} 1400w`}
+              width={1400}
+              height={840}
+              placeholder={oddityPlaceholder}
+              alt="odditycycles.com storefront"
+              sizes={sizes}
+            />
+          }
+        >
+          The brand and online store for Oddity Cycles. It gives the company a clean home
+          to show its frames and sell parts, with a straightforward path from browsing to
+          checkout. The layout stays plain on purpose so the bikes lead. It loads quickly
+          and reads well on phones as well as desktops.
+        </Product>
+
+        <Product
           name="hellokristin.co"
           href="https://hellokristin.co"
           alternate
@@ -177,7 +177,7 @@ export const AiDevelopment = () => {
             <Image
               srcSet={`${hellokristinSite} 1400w`}
               width={1400}
-              height={910}
+              height={862}
               placeholder={hellokristinSitePlaceholder}
               alt="hellokristin.co communications portfolio"
               sizes={sizes}
