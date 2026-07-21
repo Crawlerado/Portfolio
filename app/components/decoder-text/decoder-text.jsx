@@ -5,12 +5,13 @@ import { delay } from '~/utils/delay';
 import { classes } from '~/utils/style';
 import styles from './decoder-text.module.css';
 
+// Runic glyphs (Elder Futhark + Anglo-Saxon runes) — the "moon-runes" script
+// Tolkien used for the dwarves. Renders from system fonts, no webfont needed.
 // prettier-ignore
 const glyphs = [
-  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-  'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-  '#', '&', '%', '$', '@', '+', '=', '~',
+  'ᚠ', 'ᚢ', 'ᚦ', 'ᚨ', 'ᚱ', 'ᚲ', 'ᚷ', 'ᚹ', 'ᚺ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛇ',
+  'ᛈ', 'ᛉ', 'ᛊ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛜ', 'ᛞ', 'ᛟ', 'ᚻ', 'ᚫ',
+  'ᚣ', 'ᛝ', 'ᛡ', 'ᛠ', 'ᚩ', 'ᚪ', 'ᚧ', 'ᛢ', 'ᛥ', 'ᛦ',
 ];
 
 const CharType = {
