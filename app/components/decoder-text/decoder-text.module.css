@@ -9,7 +9,10 @@
   .glyph {
     opacity: 0.8;
     font-weight: var(--fontWeightRegular);
-    font-family: var(--japaneseFontStack);
+    /* Inherit the heading's font so runic scramble glyphs match the final
+       text metrics (was the template's CJK/katakana stack, which oversized
+       the runes). */
+    font-family: inherit;
     line-height: 0;
   }
 
