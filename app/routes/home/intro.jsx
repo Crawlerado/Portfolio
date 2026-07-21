@@ -17,8 +17,8 @@ import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
 
-const DisplacementSphere = lazy(() =>
-  import('./displacement-sphere').then(module => ({ default: module.DisplacementSphere }))
+const HeroContours = lazy(() =>
+  import('./hero-contours').then(module => ({ default: module.HeroContours }))
 );
 
 // Renders discipline words with line-aware animation delays.
@@ -121,7 +121,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
           <>
             {isHydrated && (
               <Suspense>
-                <DisplacementSphere />
+                <HeroContours />
               </Suspense>
             )}
             <div className={styles.heroPortrait} data-visible={visible}>

@@ -84,24 +84,25 @@
 
 .name {
   text-transform: uppercase;
-  font-size: calc((24 / 16) * 1rem);
+  font-size: calc((30 / 16) * 1rem);
   letter-spacing: 0.3em;
-  color: var(--textLight);
+  color: var(--text);
   margin-bottom: var(--space2XL);
   margin-top: 0;
-  font-weight: var(--fontWeightMedium);
+  font-weight: var(--fontWeightBold);
   line-height: 1;
   opacity: 0;
   transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
-  text-shadow: 0 0 15px var(--background), 0 0 30px var(--background);
+  text-shadow: 0 0 6px var(--background), 0 0 16px var(--background),
+    0 0 34px var(--background);
 
   @media (--mediaLaptop) {
-    font-size: calc((22 / 16) * 1rem);
+    font-size: calc((26 / 16) * 1rem);
     margin-bottom: var(--spaceXL);
   }
 
   @media (--mediaTablet) {
-    font-size: calc((18 / 16) * 1rem);
+    font-size: calc((22 / 16) * 1rem);
   }
 
   @media (--mediaMobile) {

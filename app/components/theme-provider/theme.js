@@ -114,15 +114,15 @@ const dark = {
   primary: '#5dba72',
   accent: '#8fd4a0',
   error: '#ff6b6b',
-  text: 'var(--white)',
+  text: '#f5f0e6',
   textTitle: 'var(--text)',
   textBody: 'color-mix(in lab, var(--text) 80%, transparent)',
   textLight: 'color-mix(in lab, var(--text) 60%, transparent)',
 };
 
 const light = {
-  background: '#f4f8f5',
-  backgroundLight: '#ffffff',
+  background: '#ede8da',
+  backgroundLight: '#f5f0e6',
   primary: '#2d7a3f',
   accent: '#1a5c2a',
   error: '#d44040',
