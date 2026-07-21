@@ -10,7 +10,7 @@ import {
 } from '~/layouts/project';
 import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
-import styles from './slice.module.css';
+import styles from './scaling-agile.module.css';
 
 const title = 'Scaling Agile: 20 to 80+ Builders';
 const description =
@@ -39,7 +39,7 @@ function PlaceholderImage() {
   );
 }
 
-export const Slice = () => {
+export const ScalingAgile = () => {
   return (
     <Fragment>
       <ProjectContainer>

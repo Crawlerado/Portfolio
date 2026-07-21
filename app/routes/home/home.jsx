@@ -147,7 +147,7 @@ export const Home = () => {
         title="Flywheel: Product Leadership"
         description="I led delivery for Flywheel's second product, Local Pro. Ran the roadmap from user research through go-to-market, across engineering, design, and marketing."
         buttonText="How I led it"
-        buttonLink="/projects/gamestack"
+        buttonLink="/projects/flywheel"
         decorativeLabel="Led"
         model={{
           alt: 'Agile scaling team collaboration and sprint planning',
@@ -172,7 +172,7 @@ export const Home = () => {
         title="Scaling Agile: 20 to 80+ Builders"
         description="As Agile Coach at Flywheel/WP Engine, I grew the Scrum organization from 20 to 80-plus and coached client teams across four countries on Scrum, Kanban, and release planning. I learned the craft from Scrum co-creator Jeff Sutherland and Mike Cohn."
         buttonText="How I scaled it"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/scaling-agile"
         decorativeLabel="Scaled"
         model={{
           alt: 'Flywheel product leadership team collaboration',

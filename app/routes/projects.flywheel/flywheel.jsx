@@ -10,7 +10,7 @@ import {
 } from '~/layouts/project';
 import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
-import styles from './gamestack.module.css';
+import styles from './flywheel.module.css';
 
 const title = 'Flywheel: Product Leadership';
 const description =
@@ -39,7 +39,7 @@ function PlaceholderImage() {
   );
 }
 
-export const Gamestack = () => {
+export const Flywheel = () => {
   return (
     <Fragment>
       <ProjectContainer>
