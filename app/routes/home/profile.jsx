@@ -2,7 +2,6 @@ import profileImgLarge from '~/assets/profile-large.jpg';
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
 import profileImg from '~/assets/profile.jpg';
 import { Button } from '~/components/button';
-import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
 import { Heading } from '~/components/heading';
 import { Image } from '~/components/image';
@@ -18,7 +17,7 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      Hi there
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I'm Nathan, a product manager who came up through IT and networking. I've been

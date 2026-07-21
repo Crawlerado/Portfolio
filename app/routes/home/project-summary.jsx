@@ -1,5 +1,4 @@
 import { Button } from '~/components/button';
-import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
 import { Heading } from '~/components/heading';
 import { Image } from '~/components/image';
@@ -54,7 +53,7 @@ export function ProjectSummary({
           data-visible={visible}
           id={titleId}
         >
-          <DecoderText text={title} start={visible} delay={300} />
+          {title}
         </Heading>
         <Text className={styles.description} data-visible={visible} as="p">
           {description}

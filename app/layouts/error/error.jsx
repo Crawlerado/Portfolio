@@ -3,7 +3,6 @@ import notFoundVideo from '~/assets/notfound.mp4';
 import flatlinePoster from '~/assets/flatline.png';
 import flatlineVideo from '~/assets/flatline.mp4';
 import { Button } from '~/components/button';
-import { DecoderText } from '~/components/decoder-text';
 import { Heading } from '~/components/heading';
 import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
@@ -80,7 +79,7 @@ export function Error({ error }) {
                     <svg width="60" height="80" viewBox="0 0 60 80">
                       <use href={`${flatlineSkull}#skull`} />
                     </svg>
-                    <DecoderText text="Flatlined" start={visible} delay={300} />
+                    Flatlined
                   </Heading>
                 )}
                 {!flatlined && (
@@ -91,7 +90,7 @@ export function Error({ error }) {
                     as="h2"
                     level={4}
                   >
-                    <DecoderText text={summary} start={visible} delay={300} />
+                    {summary}
                   </Heading>
                 )}
                 <Text className={styles.description} data-visible={visible} as="p">
