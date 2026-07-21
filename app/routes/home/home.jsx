@@ -97,8 +97,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="AI-Powered Product Development"
-        description="Proof that product sense + AI ships real software. nathank.build, a beloved weather app, a gravel road discovery tool, and a resource app for the unhoused. All designed and launched with AI as my engineering partner."
+        title="Building and Shipping Products"
+        description="Four products I designed and shipped end to end: this site, a weather app, a gravel-road discovery tool, and a resource app for people without housing. I write the code, using LLM-based tools as my engineering partner."
         buttonText="View projects"
         buttonLink="/projects/ai-development"
         decorativeLabel="Shipped"
