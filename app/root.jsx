@@ -13,7 +13,7 @@ import { createCookieSessionStorage, json } from '@remix-run/cloudflare';
 import { ThemeProvider, themeStyles } from '~/components/theme-provider';
 import GothamBook from '~/assets/fonts/gotham-book.woff2';
 import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
 import { Navbar } from '~/layouts/navbar';
@@ -26,6 +26,14 @@ import styles from './root.module.css';
 // overflow-x guard, box-sizing. Plain .css side-effect imports are retained.
 import './reset.css';
 import './global.css';
+import { useHydrated } from '~/hooks/useHydrated';
+
+// Ambient topographic-contour backdrop rendered once behind every page.
+const HeroContours = lazy(() =>
+  import('~/routes/home/hero-contours').then(module => ({
+    default: module.HeroContours,
+  }))
+);
 
 export const links = () => [
   {
@@ -85,6 +93,7 @@ export default function App() {
   let { canonicalUrl, theme } = useLoaderData();
   const fetcher = useFetcher();
   const { state } = useNavigation();
+  const isHydrated = useHydrated();
 
   if (fetcher.formData?.has('theme')) {
     theme = fetcher.formData.get('theme');
@@ -122,6 +131,11 @@ export default function App() {
       </head>
       <body data-theme={theme}>
         <ThemeProvider theme={theme} toggleTheme={toggleTheme}>
+          {isHydrated && (
+            <Suspense>
+              <HeroContours />
+            </Suspense>
+          )}
           <Progress />
           <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">
             Skip to main content

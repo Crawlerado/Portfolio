@@ -17,9 +17,6 @@ import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
 
-const HeroContours = lazy(() =>
-  import('./hero-contours').then(module => ({ default: module.HeroContours }))
-);
 
 // Renders discipline words with line-aware animation delays.
 // Words on the same visual line animate together; new lines get staggered.
@@ -119,11 +116,6 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
       <Transition in key={theme} timeout={3000}>
         {({ visible, status }) => (
           <>
-            {isHydrated && (
-              <Suspense>
-                <HeroContours />
-              </Suspense>
-            )}
             <div className={styles.heroPortrait} data-visible={visible}>
               <Image
                 className={styles.heroPortraitImage}
