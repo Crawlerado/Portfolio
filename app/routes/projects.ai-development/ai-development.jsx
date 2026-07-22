@@ -65,29 +65,8 @@ export const AiDevelopment = () => {
         <ProjectHeader title={title} description={description} roles={roles} />
 
         <Product
-          name="nathank.build"
-          href="https://nathank.build"
-          image={
-            <Image
-              srcSet={`${nathankSite} 1400w`}
-              width={1400}
-              height={840}
-              placeholder={nathankSitePlaceholder}
-              alt="nathank.build portfolio site"
-              sizes={sizes}
-            />
-          }
-        >
-          The site you&apos;re on right now. Built with Remix, Three.js, and custom GLSL
-          shaders, deployed to Cloudflare. I used Claude Code as my engineering partner
-          throughout. It has a responsive layout, animated transitions, dark and light
-          themes, and is tuned for performance.
-        </Product>
-
-        <Product
           name="Find Unpaved"
           href="https://crawlerado.com/explore"
-          alternate
           image={
             <Image
               srcSet={`${findUnpaved} 1400w`}
@@ -109,6 +88,7 @@ export const AiDevelopment = () => {
         <Product
           name="sleepmat.app"
           href="https://sleepmat.app"
+          alternate
           image={
             <Image
               srcSet={`${sleepmatWeb} 1400w`}
@@ -125,6 +105,26 @@ export const AiDevelopment = () => {
           which matters most for the people who rely on it. The listings are curated and
           kept current so they can be trusted. It is quiet, fast, and free of anything that
           gets in the way.
+        </Product>
+
+        <Product
+          name="odditycycles.com"
+          href="https://odditycycles.com"
+          image={
+            <Image
+              srcSet={`${oddity} 1400w`}
+              width={1400}
+              height={840}
+              placeholder={oddityPlaceholder}
+              alt="odditycycles.com storefront"
+              sizes={sizes}
+            />
+          }
+        >
+          The brand and online store for Oddity Cycles. It gives the company a clean home
+          to show its frames and sell parts, with a straightforward path from browsing to
+          checkout. The layout stays plain on purpose so the bikes lead. It loads quickly
+          and reads well on phones as well as desktops.
         </Product>
 
         <Product
@@ -150,29 +150,8 @@ export const AiDevelopment = () => {
         </Product>
 
         <Product
-          name="odditycycles.com"
-          href="https://odditycycles.com"
-          image={
-            <Image
-              srcSet={`${oddity} 1400w`}
-              width={1400}
-              height={840}
-              placeholder={oddityPlaceholder}
-              alt="odditycycles.com storefront"
-              sizes={sizes}
-            />
-          }
-        >
-          The brand and online store for Oddity Cycles. It gives the company a clean home
-          to show its frames and sell parts, with a straightforward path from browsing to
-          checkout. The layout stays plain on purpose so the bikes lead. It loads quickly
-          and reads well on phones as well as desktops.
-        </Product>
-
-        <Product
           name="hellokristin.co"
           href="https://hellokristin.co"
-          alternate
           image={
             <Image
               srcSet={`${hellokristinSite} 1400w`}
@@ -188,6 +167,27 @@ export const AiDevelopment = () => {
           writing, campaign work, and travel photography into one calm, readable place. The
           photo galleries are paginated so large sets stay quick to browse. Built on the
           same foundation as this site, tuned to her voice and work.
+        </Product>
+
+        <Product
+          name="nathank.build"
+          href="https://nathank.build"
+          alternate
+          image={
+            <Image
+              srcSet={`${nathankSite} 1400w`}
+              width={1400}
+              height={840}
+              placeholder={nathankSitePlaceholder}
+              alt="nathank.build portfolio site"
+              sizes={sizes}
+            />
+          }
+        >
+          The site you&apos;re on right now. Built with Remix, Three.js, and custom GLSL
+          shaders, deployed to Cloudflare. I used Claude Code as my engineering partner
+          throughout. It has a responsive layout, animated transitions, dark and light
+          themes, and is tuned for performance.
         </Product>
       </ProjectContainer>
       <Footer />
