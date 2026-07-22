@@ -100,7 +100,7 @@ const fragmentShader = /* glsl */ `
 `;
 
 // Overall opacity of the whole effect. Lower = quieter backdrop.
-const STRENGTH = 0.85;
+const STRENGTH = 0.6;
 
 const palettes = {
   dark: { lo: '#153524', hi: '#4f9a68', line: '#8fe6b0' },
