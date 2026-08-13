@@ -83,15 +83,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 >
                   Let&apos;s Meet
                 </Button>
-                <Button
-                  secondary
-                  className={styles.button}
-                  data-visible={visible}
-                  href="/nathan-knisley-resume.pdf"
-                  icon="arrow-right"
-                >
-                  Download resume
-                </Button>
               </div>
             </div>
             <div className={styles.preview}>

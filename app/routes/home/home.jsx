@@ -25,6 +25,7 @@ import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
+import { Skills } from './skills';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
@@ -47,10 +48,11 @@ export const Home = () => {
   const projectFive = useRef();
   const projectSix = useRef();
   const projectSeven = useRef();
+  const skills = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, skills, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -245,6 +247,11 @@ export const Home = () => {
             },
           ],
         }}
+      />
+      <Skills
+        sectionRef={skills}
+        visible={visibleSections.includes(skills.current)}
+        id="skills"
       />
       <Profile
         sectionRef={details}

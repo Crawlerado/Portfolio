@@ -19,7 +19,7 @@ export function Error({ error }) {
         return {
           summary: 'Error: redacted',
           message:
-            'This page could not be found. It either doesn’t exist or was deleted. Or perhaps you don’t exist and this webpage couldn’t find you.',
+            "This page could not be found. It either doesn't exist or was deleted. Or perhaps you don't exist and this webpage couldn't find you.",
         };
       case 405:
         return {
