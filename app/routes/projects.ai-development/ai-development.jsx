@@ -29,7 +29,7 @@ import styles from './ai-development.module.css';
 
 const title = 'Building and Shipping Products';
 const description =
-  'Live sites and apps I designed and shipped, using LLM-based coding tools as my engineering partner. Each one solves a concrete problem for the people who use it.';
+  'Live sites and apps I designed and shipped, with LLM-based coding tools as my engineering partner. All of these are running in production, and I still maintain them.';
 const roles = ['Product', 'ML/AI Development', 'Design', 'Builder'];
 
 export const meta = () => {
@@ -78,11 +78,10 @@ export const AiDevelopment = () => {
             />
           }
         >
-          An interactive map for finding gravel and unpaved roads to ride, part of
-          Crawlerado. Riders filter by surface and see what is actually rideable near them,
-          instead of guessing from a standard road map. It runs on vector tiles and custom
-          routing, so it stays quick even with a lot of data. Less time planning, more time
-          riding.
+          Part of Crawlerado. An interactive map for finding gravel and unpaved roads to
+          ride, where you filter by surface and see what is genuinely rideable near you. It
+          runs on vector tiles with custom routing, so panning around with that much data
+          on screen stays quick.
         </Product>
 
         <Product
@@ -100,11 +99,11 @@ export const AiDevelopment = () => {
             />
           }
         >
-          An offline-first app that helps people without stable housing find nearby
-          resources: showers, food, shelter, and healthcare. It works without a signal,
-          which matters most for the people who rely on it. The listings are curated and
-          kept current so they can be trusted. It is quiet, fast, and free of anything that
-          gets in the way.
+          An offline-first app for people without stable housing: showers, food, shelter,
+          healthcare, all searchable with no signal and no account. That constraint drove
+          most of the design, because the moment you require a login or a data connection
+          you have shut out the people who need it most. The listings are curated and kept
+          current.
         </Product>
 
         <Product
@@ -121,10 +120,8 @@ export const AiDevelopment = () => {
             />
           }
         >
-          The brand and online store for Oddity Cycles. It gives the company a clean home
-          to show its frames and sell parts, with a straightforward path from browsing to
-          checkout. The layout stays plain on purpose so the bikes lead. It loads quickly
-          and reads well on phones as well as desktops.
+          The brand and online store for Oddity Cycles, from browsing to checkout. The
+          layout stays plain on purpose so the frames lead.
         </Product>
 
         <Product
@@ -143,10 +140,10 @@ export const AiDevelopment = () => {
             />
           }
         >
-          The home for Crawlerado, a Northern Colorado bikepacking community I founded. It
-          welcomes new riders, points them to routes and gear, and gives the group a place
-          to gather. The tone is deliberately rough, built for people who ride dirt.
-          Everything is fast and mobile-first, since it gets opened on the trail.
+          The home for Crawlerado, a Northern Colorado bikepacking community I started.
+          Routes, gear, and somewhere for the group to gather. The tone is deliberately
+          rough, and everything is mobile-first, because it gets opened at a trailhead on
+          one bar of signal.
         </Product>
 
         <Product
@@ -163,10 +160,10 @@ export const AiDevelopment = () => {
             />
           }
         >
-          A portfolio site for a communications and marketing professional. It brings her
-          writing, campaign work, and travel photography into one calm, readable place. The
-          photo galleries are paginated so large sets stay quick to browse. Built on the
-          same foundation as this site, tuned to her voice and work.
+          A portfolio site for a communications and marketing professional, pulling her
+          writing, campaign work, and travel photography into one place. Same foundation as
+          this site, tuned to her work. The galleries paginate so the big photo sets stay
+          quick.
         </Product>
 
         <Product
@@ -184,10 +181,9 @@ export const AiDevelopment = () => {
             />
           }
         >
-          The site you&apos;re on right now. Built with Remix, Three.js, and custom GLSL
-          shaders, deployed to Cloudflare. I used Claude Code as my engineering partner
-          throughout. It has a responsive layout, animated transitions, dark and light
-          themes, and is tuned for performance.
+          The site you&apos;re on. Remix, Three.js, and custom GLSL shaders on Cloudflare,
+          with Claude Code as my engineering partner throughout. If you&apos;re reading
+          this on a phone in dark mode, that works too.
         </Product>
       </ProjectContainer>
       <Footer />

@@ -14,7 +14,7 @@ import styles from './flywheel.module.css';
 
 const title = 'Flywheel: Product Leadership';
 const description =
-  "Led the delivery team for Flywheel's second-ever product offering. Drove the customer-led roadmap with user research, go-to-market strategy, and cross-functional collaboration across engineering, design, and marketing.";
+  "Led the delivery team for Flywheel's second product. Ran the customer-led roadmap with user research, go-to-market strategy, and cross-functional work across engineering, design, and marketing.";
 const roles = ['Product Management', 'User Research', 'Go-to-Market', 'Cross-Functional Leadership'];
 
 export const meta = () => {
@@ -56,9 +56,9 @@ export const Flywheel = () => {
                   <ProjectSectionHeading>Leading Local Pro</ProjectSectionHeading>
                   <ProjectSectionText>
                     Flywheel needed a second product. I led the delivery team for Local Pro,
-                    taking it from customer discovery through launch. We ran user interviews,
-                    mapped pain points, and built a roadmap grounded in real feedback rather
-                    than assumptions.
+                    taking it from customer discovery through launch. We interviewed users,
+                    mapped where they got stuck, and built the roadmap from what they told
+                    us.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -93,9 +93,9 @@ export const Flywheel = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Go-to-Market</ProjectSectionHeading>
                   <ProjectSectionText>
-                    A launch takes more than working code. I coordinated go-to-market across
-                    marketing, sales, and support, so customers understood the product and
-                    internal teams were ready to support it.
+                    I coordinated go-to-market across marketing, sales, and support, so
+                    customers understood the product and the internal teams were ready for
+                    it on day one.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

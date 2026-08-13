@@ -14,7 +14,7 @@ import styles from './scaling-agile.module.css';
 
 const title = 'Scaling Agile: 20 to 80+ Builders';
 const description =
-  'As Agile Coach at Flywheel/WP Engine, I scaled the Scrum organization fourfold. Certified by Jeff Sutherland and Mike Cohn, I trained thousands of clients across four countries on Agile, Scrum, Kanban, and release planning.';
+  'Agile Coach at Flywheel/WP Engine while the Scrum organization grew fourfold, from 20 builders to 80-plus. Trained client teams in four countries on Agile, Scrum, Kanban, and release planning.';
 const roles = ['Agile Coach', 'Scrum Master', 'Training', 'Organizational Scaling'];
 
 export const meta = () => {
@@ -55,11 +55,11 @@ export const ScalingAgile = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Scaling the Organization</ProjectSectionHeading>
                   <ProjectSectionText>
-                    When I joined Flywheel as Agile Coach, the engineering team was around
-                    20 people running a handful of Scrum teams. Over the next several years,
-                    I helped scale it to 80+ builders. That work meant evolving team
-                    structures and adding cross-team coordination. I also coached leaders
-                    through the problems that come with fast growth.
+                    When I joined Flywheel as Agile Coach, engineering was around 20 people
+                    running a handful of Scrum teams. By the time I moved on it was 80-plus
+                    builders. I ran the coaching, reshaped team structures as groups split,
+                    and built the cross-team coordination a group that size needs. I also
+                    coached leaders through the problems that come with fast growth.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -77,9 +77,9 @@ export const ScalingAgile = () => {
                   <ProjectSectionText>
                     I worked across Scrum, Kanban, and SAFe depending on what each team
                     needed. Some teams thrived with strict two-week sprints. Others needed
-                    the flexibility of Kanban flow. At the portfolio level, I helped
-                    leadership adopt release planning and PI planning practices that
-                    gave the whole organization visibility into what was coming and when.
+                    the flexibility of Kanban flow. At the portfolio level I introduced
+                    release planning and PI planning, which gave the whole organization
+                    visibility into what was coming and when.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

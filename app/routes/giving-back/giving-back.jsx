@@ -86,9 +86,8 @@ export const GivingBack = () => {
                     classes, community rides, art fundraisers, and dinners.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    Helped keep the shop open through COVID with half the staff,
-                    and wrote grants that funded operations through a difficult
-                    stretch.
+                    We kept the shop open through COVID on half the usual staff.
+                    I wrote the grants that funded operations that year.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -118,15 +117,14 @@ export const GivingBack = () => {
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Mentored weekly through TeamMates, a statewide program
-                    pairing adults with students. I walked alongside my
-                    teammate from 2nd grade through 11th grade, helping with
-                    time management, goal-setting, and navigating school
-                    challenges.
+                    pairing adults with students. I met the same teammate from
+                    2nd grade through 11th. We covered time management,
+                    goal-setting, and whatever school was throwing at them that
+                    year.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    Nine years of weekly meetings. Research links consistent
-                    mentoring to better grades, retention, and wellbeing.
-                    Mostly it means a kid has someone steady in their corner.
+                    Nine years of weekly meetings. Mostly it means a kid has
+                    someone steady in their corner.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -157,7 +155,7 @@ export const GivingBack = () => {
                   <ProjectSectionText>
                     Planned and ran regular days of volunteering at food banks,
                     shelters, and youth organizations around Omaha. Twice a year
-                    we organized a &ldquo;choose your cause&rdquo; drive around
+                    we organized a &quot;choose your cause&quot; drive around
                     Omaha Gives,{' '}
                     <Link href="https://web.archive.org/web/20210614203810/https://getflywheel.com/layout/life-at-flywheel/fly-community-threw-a-party-to-help-flywheelers-give-back/">
                       raising over $7,340 for more than 50 Omaha nonprofits

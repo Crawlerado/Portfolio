@@ -20,15 +20,15 @@ const ProfileText = ({ visible, titleId }) => (
       Hi there
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Nathan, a product manager who came up through IT and networking. I've been
-      Chief of Staff at a startup where the CEO recruited me to help run it, grew an agile
-      org from 20 to 80-plus at Flywheel/WP Engine, and delivered the first big-data
+      I'm Nathan, a product manager who came up through IT and networking. I served as
+      Chief of Staff at a pet wellness startup, worked as an agile coach at Flywheel/WP
+      Engine while the org grew from 20 to 80-plus, and delivered the first big-data
       platform at a Fortune 500 company.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I build as well as plan. I write and ship code, prototype with LLM-based tools, and
-      stay close to how the product actually gets made. I trained under Scrum co-creator
-      Jeff Sutherland and Mike Cohn, and have coached client teams across four countries.
+      stay close to how the product actually gets made. Coming up through networking means
+      I can still read the stack, which shortens a lot of conversations with engineers.
       Feel free to{' '}
       <Link href={`mailto:${config.email}`}>say hello</Link>.
     </Text>

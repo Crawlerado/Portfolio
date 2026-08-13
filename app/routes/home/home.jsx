@@ -103,12 +103,12 @@ export const Home = () => {
         buttonLink="/projects/ai-development"
         decorativeLabel="Shipped"
         model={{
-          alt: 'Four AI-built apps: portfolio site, StarkWeather, Grabbl, and SleepMat',
+          alt: 'Three sites I built and shipped: Find Unpaved, SleepMat, and nathank.build',
           imageScale: 1,
           imageOffsetY: '0%',
           textures: [
             {
-              srcSet: `${aiDev} 1280w, ${aiDevLarge} 7823w`,
+              srcSet: `${aiDev} 1280w, ${aiDevLarge} 1800w`,
               placeholder: aiDevPlaceholder,
             },
           ],
@@ -122,7 +122,7 @@ export const Home = () => {
         index={2}
         previewMaxWidth="450px"
         title="PetFriendly: Chief of Staff"
-        description="I co-ran a pet-wellness startup alongside the CEO. Led an 11-person engineering team, ran operations and the leadership team, and tripled the product offering."
+        description="Co-ran a pet wellness startup with the CEO. I led an 11-person engineering team and ran operations and the leadership team, and together we tripled the product offering."
         buttonText="How I ran it"
         buttonLink="/projects/petfriendly"
         decorativeLabel="Ran"
@@ -170,7 +170,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="Scaling Agile: 20 to 80+ Builders"
-        description="As Agile Coach at Flywheel/WP Engine, I grew the Scrum organization from 20 to 80-plus and coached client teams across four countries on Scrum, Kanban, and release planning. I learned the craft from Scrum co-creator Jeff Sutherland and Mike Cohn."
+        description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. I also trained client teams in four countries on Scrum, Kanban, and release planning."
         buttonText="How I scaled it"
         buttonLink="/projects/scaling-agile"
         decorativeLabel="Scaled"
@@ -211,7 +211,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectSix.current)}
         index={6}
         title="Crawlerado Bikepacking"
-        description="A bikepacking community I founded in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. Built and shipped solo."
+        description="A bikepacking community I started in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. I design, build, and maintain it."
         buttonText="Visit crawlerado.com"
         buttonLink="https://crawlerado.com"
         decorativeLabel="Rode"

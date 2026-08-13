@@ -20,9 +20,9 @@ import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
 import styles from './petfriendly.module.css';
 
-const title = 'PetFriendly — Chief of Staff';
+const title = 'PetFriendly: Chief of Staff';
 const description =
-  'Recruited by the CEO to co-run the company. Oversaw operations, managed the development team, ran the leadership team, and tripled the product offering at this pet wellness startup.';
+  'Co-ran a pet wellness startup with the CEO. Ran operations, managed the development team, chaired the leadership team, and tripled the product offering.';
 const roles = ['Chief of Staff', 'Operations', 'Product', 'Team Leadership'];
 
 export const meta = () => {
@@ -63,10 +63,11 @@ export const PetFriendly = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Running the Company</ProjectSectionHeading>
                   <ProjectSectionText>
-                    As Chief of Staff at PetFriendly, the CEO recruited me directly to
-                    work as his second. I oversaw day-to-day operations, managed the
-                    engineering team, and ran the leadership meetings. When a decision was
-                    needed and the CEO was unavailable, I made the call.
+                    I joined PetFriendly as Chief of Staff, working as the CEO&apos;s
+                    second. I ran day-to-day operations, managed the engineering team, and
+                    chaired the leadership meetings. The role came with standing authority
+                    to decide in the CEO&apos;s absence, which in a company that size
+                    happened most weeks.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -116,9 +117,8 @@ export const PetFriendly = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Building the Team</ProjectSectionHeading>
                   <ProjectSectionText>
-                    I also worked on team culture. I ran hiring, onboarded new engineers,
-                    and set up the routines a small startup needs to stay organized as it
-                    grows.
+                    I ran hiring, onboarded new engineers, and set up the routines a small
+                    startup needs to stay organized as it grows.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>

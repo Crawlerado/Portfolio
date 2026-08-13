@@ -16,7 +16,7 @@ export function baseMeta({
     { name: 'description', content: description },
     { name: 'author', content: name },
     { property: 'og:image', content: ogImage },
-    { property: 'og:image:alt', content: `${name} — Product Leader + Builder` },
+    { property: 'og:image:alt', content: `${name}, Product Leader + Builder` },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:title', content: titleText },
