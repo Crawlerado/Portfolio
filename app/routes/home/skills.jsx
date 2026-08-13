@@ -25,6 +25,7 @@ const groups = [
       'Looker',
       'Tableau',
       'BigQuery',
+      'Google Analytics',
       'A/B testing across web, mobile, and commerce',
       'Salesforce',
     ],
