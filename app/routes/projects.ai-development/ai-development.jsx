@@ -79,9 +79,10 @@ export const AiDevelopment = () => {
           }
         >
           Part of Crawlerado. An interactive map for finding gravel and unpaved roads to
-          ride, where you filter by surface and see what is genuinely rideable near you. It
-          runs on vector tiles with custom routing, so panning around with that much data
-          on screen stays quick.
+          ride, where you filter by surface and see what is genuinely rideable near you. I
+          built the pipeline that turns raw OpenStreetMap extracts into vector tiles, and
+          wired it to a self-hosted routing engine behind a caching API. Panning stays
+          quick because the tiles do the work, not the browser.
         </Product>
 
         <Product
@@ -101,9 +102,9 @@ export const AiDevelopment = () => {
         >
           An offline-first app for people without stable housing: showers, food, shelter,
           healthcare, all searchable with no signal and no account. That constraint drove
-          most of the design, because the moment you require a login or a data connection
-          you have shut out the people who need it most. The listings are curated and kept
-          current.
+          the architecture. The data ships bundled behind a service worker, so a first
+          launch works on a dead connection and nothing phones home. Listings are curated
+          from federal and municipal sources and kept current.
         </Product>
 
         <Product
@@ -120,8 +121,9 @@ export const AiDevelopment = () => {
             />
           }
         >
-          The brand and online store for Oddity Cycles, from browsing to checkout. The
-          layout stays plain on purpose so the frames lead.
+          The brand and online store for Oddity Cycles: catalog, product pages, and the
+          conversion path through to checkout. The layout stays plain on purpose so the
+          frames lead.
         </Product>
 
         <Product
@@ -161,9 +163,9 @@ export const AiDevelopment = () => {
           }
         >
           A portfolio site for a communications and marketing professional, pulling her
-          writing, campaign work, and travel photography into one place. Same foundation as
-          this site, tuned to her work. The galleries paginate so the big photo sets stay
-          quick.
+          writing, campaign work, and travel photography into one place. Same component
+          foundation as this site, retuned for her work. Galleries paginate and images are
+          served responsively, so the big photo sets stay quick.
         </Product>
 
         <Product
@@ -181,9 +183,10 @@ export const AiDevelopment = () => {
             />
           }
         >
-          The site you&apos;re on. Remix, Three.js, and custom GLSL shaders on Cloudflare,
-          with Claude Code as my engineering partner throughout. If you&apos;re reading
-          this on a phone in dark mode, that works too.
+          The site you&apos;re on. Remix and Three.js with custom GLSL shaders, deployed on
+          Cloudflare Pages, with Claude Code as my engineering partner throughout. It
+          doubles as the testbed for anything I want to try before it goes near client
+          work.
         </Product>
       </ProjectContainer>
       <Footer />
