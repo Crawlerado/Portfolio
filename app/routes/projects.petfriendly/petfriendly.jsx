@@ -22,8 +22,14 @@ import styles from './petfriendly.module.css';
 
 const title = 'PetFriendly: Chief of Staff';
 const description =
-  'Co-ran a pet wellness startup with the CEO. Ran operations, managed the development team, chaired the leadership team, and tripled the product offering.';
-const roles = ['Chief of Staff', 'Operations', 'Product', 'Team Leadership'];
+  'Chief of Staff at a subscription pet wellness startup, 2022 to 2024. Company strategy, OKRs across every department, a 23-person product org across three countries, and the budget behind it.';
+const roles = [
+  'Chief of Staff',
+  'Company Strategy',
+  'Interim Executive',
+  'Org Leadership',
+  'Budget Ownership',
+];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -61,13 +67,18 @@ export const PetFriendly = () => {
             <div className={styles.columns}>
               <div className={styles.textColumn}>
                 <ProjectTextRow noMargin>
-                  <ProjectSectionHeading>Running the Company</ProjectSectionHeading>
+                  <ProjectSectionHeading>The Mandate</ProjectSectionHeading>
                   <ProjectSectionText>
-                    I joined PetFriendly as Chief of Staff, working as the CEO&apos;s
-                    second. I ran day-to-day operations, managed the engineering team, and
-                    chaired the leadership meetings. The role came with standing authority
-                    to decide in the CEO&apos;s absence, which in a company that size
-                    happened most weeks.
+                    I joined PetFriendly in February 2022 as Chief of Staff, second in
+                    command to the CEO, and stayed through March 2024. The official remit
+                    was growth, process, brand, and product launch, which in practice meant
+                    whatever the company had not yet built.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    I ran day-to-day operations and chaired the leadership meetings. The
+                    role came with standing authority to decide in the CEO&apos;s absence,
+                    and I served as interim executive on business inquiries and high-level
+                    decisions when he was out.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -84,6 +95,70 @@ export const PetFriendly = () => {
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>Company Strategy</ProjectSectionHeading>
+              <ProjectSectionText>
+                I architected the company-wide strategy across four areas: brand, customer
+                experience, technology, and leadership. That meant setting the direction
+                each function worked toward, then keeping those directions from pulling
+                against each other, which is most of the job at a company this size.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                I also established the data strategy and the process around it. Before
+                that, reporting was assembled by hand whenever someone asked a question.
+                Afterwards there was a defined source of truth and a routine for keeping
+                it current, so leadership arguments could be about the decision rather than
+                about whose number was right.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>OKRs Across Every Department</ProjectSectionHeading>
+              <ProjectSectionText>
+                I ran OKRs for the whole company, not one function. Every department set
+                objectives through the same process, on the same cadence, and reviewed them
+                in the same forum. The value was less in the framework than in the
+                cadence: a standing rhythm where teams said out loud what they intended to
+                do and then reported honestly on what happened.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Coming from agile coaching, I had already spent years watching this go
+                wrong. The failure mode is treating OKRs as a reporting tax instead of a
+                prioritization tool, so I kept the set small and made it acceptable to miss
+                one and say why.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>
+                A Product Org Across Three Countries
+              </ProjectSectionHeading>
+              <ProjectSectionText>
+                At its widest the group ran to 23 people. Eleven were in-house product and
+                engineering: backend, frontend, a VP of Technology, plus design and data.
+                Twelve were contracted, eight Laravel engineers in Canada, two in the
+                United States, and two in the Philippines. Alongside that we ran a
+                year-long agency engagement.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Spread across those time zones, the coordination is the work. I owned
+                scope, schedule, and the handoffs between groups, which is where
+                distributed builds usually fail. The practical version was making sure a
+                decision taken in Omaha on Tuesday afternoon reached Manila before it
+                blocked anyone, and that no group was waiting on an answer nobody had been
+                asked for.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
             <div className={styles.columns} data-alternate="true">
               <div className={styles.textColumn}>
@@ -110,6 +185,24 @@ export const PetFriendly = () => {
             </div>
           </ProjectSectionContent>
         </ProjectSection>
+        <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>The Headless Commerce Build</ProjectSectionHeading>
+              <ProjectSectionText>
+                The largest objective on the company roadmap was a custom headless commerce
+                platform, built from the ground up for subscription products
+                instead of bolted onto a template. I led it to delivery.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Subscription is the hard part. A standard storefront assumes a one-time
+                cart, so recurring billing, plan changes, skips, and swaps all have to be
+                designed, not configured, and every one of them touches fulfillment for a
+                physical product that ships on a schedule.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
         <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
             <div className={styles.columns}>
@@ -119,6 +212,11 @@ export const PetFriendly = () => {
                   <ProjectSectionText>
                     I ran hiring, onboarded new engineers, and set up the routines a small
                     startup needs to stay organized as it grows.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Onboarding mattered more than usual here. With contractors joining from
+                    three countries, anything that lived only in someone&apos;s head was a
+                    single point of failure, so it had to be written down.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -134,6 +232,25 @@ export const PetFriendly = () => {
                 />
               </div>
             </div>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>Budget and Vendor Accountability</ProjectSectionHeading>
+              <ProjectSectionText>
+                I held budget and cost-control accountability for the technology program:
+                in-house engineering, two contractor teams, the agency, and the replatform.
+                It was a multi-million-dollar program, and I partnered with the CFO on
+                spend, forecasting, and the trade-off calls underneath it.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Managing a premium agency&apos;s scope against an in-house timeline was the
+                real work. An outside shop works to its own delivery window, and
+                keeping that honest against what the internal team could absorb is a
+                different skill from writing the contract.
+              </ProjectSectionText>
+            </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>
