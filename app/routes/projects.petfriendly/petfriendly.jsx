@@ -89,6 +89,7 @@ export const PetFriendly = () => {
                   placeholder={petFriendlyPlaceholder}
                   alt="PetFriendly app promotional video"
                   sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+                  noPauseButton
                 />
               </div>
             </div>

@@ -84,11 +84,21 @@
 .croppedVideo {
   width: 100%;
   display: block;
+  /* The frame owns the crop box. The video then fills it outright, so a
+     mismatch between the video's intrinsic ratio and the crop cannot leave
+     a gap under it. */
+  aspect-ratio: var(--videoCrop);
+  overflow: hidden;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
 
   & video {
     width: 100%;
+    height: 100%;
     display: block;
-    aspect-ratio: var(--videoCrop);
     object-fit: cover;
     object-position: 50% var(--videoCropY, 50%);
   }
