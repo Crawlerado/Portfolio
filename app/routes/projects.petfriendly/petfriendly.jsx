@@ -75,10 +75,10 @@ export const PetFriendly = () => {
                     whatever the company had not yet built.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    I ran day-to-day operations and chaired the leadership meetings. The
-                    role came with standing authority to decide in the CEO&apos;s absence,
-                    and I served as interim executive on business inquiries and high-level
-                    decisions when he was out.
+                    The job covered day-to-day operations and chairing the leadership
+                    meetings. It also came with standing authority to decide in the
+                    CEO&apos;s absence, and interim executive duty on business inquiries
+                    and high-level decisions when he was out.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -100,14 +100,15 @@ export const PetFriendly = () => {
             <ProjectTextRow width="l" noMargin>
               <ProjectSectionHeading>Company Strategy</ProjectSectionHeading>
               <ProjectSectionText>
-                I architected the company-wide strategy across four areas: brand, customer
-                experience, technology, and leadership. That meant setting the direction
-                each function worked toward, then keeping those directions from pulling
-                against each other, which is most of the job at a company this size.
+                The company-wide strategy spanned four areas: brand, customer experience,
+                technology, and leadership. Building it meant setting the direction each
+                function worked toward, then keeping those directions from pulling against
+                each other, which is most of the job at a company this size.
               </ProjectSectionText>
               <ProjectSectionText>
-                I also established the data strategy and the process around it. Before
-                that, reporting was assembled by hand whenever someone asked a question.
+                The data strategy and the process around it came out of the same stretch.
+                Before that, reporting was assembled by hand whenever someone asked a
+                question.
                 Afterwards there was a defined source of truth and a routine for keeping
                 it current, so leadership arguments could be about the decision rather than
                 about whose number was right.
@@ -120,7 +121,7 @@ export const PetFriendly = () => {
             <ProjectTextRow width="l" noMargin>
               <ProjectSectionHeading>OKRs Across Every Department</ProjectSectionHeading>
               <ProjectSectionText>
-                I ran OKRs for the whole company, not one function. Every department set
+                OKRs ran across the whole company, not one function. Every department set
                 objectives through the same process, on the same cadence, and reviewed them
                 in the same forum. The value was less in the framework than in the
                 cadence: a standing rhythm where teams said out loud what they intended to
@@ -211,7 +212,7 @@ export const PetFriendly = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Building the Team</ProjectSectionHeading>
                   <ProjectSectionText>
-                    I ran hiring, onboarded new engineers, and set up the routines a small
+                    Hiring and onboarding sat with me too, along with the routines a small
                     startup needs to stay organized as it grows.
                   </ProjectSectionText>
                   <ProjectSectionText>
