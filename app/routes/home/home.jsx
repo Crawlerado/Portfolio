@@ -124,7 +124,7 @@ export const Home = () => {
         index={2}
         previewMaxWidth="450px"
         title="PetFriendly: Chief of Staff"
-        description="Co-ran a pet wellness startup with the CEO. I led an 11-person engineering team and ran operations and the leadership team, and together we tripled the product offering."
+        description="Co-ran a pet wellness startup with the CEO. Led a 23-person product org across three countries, ran operations and the leadership team, and together we tripled the product offering."
         buttonText="How I ran it"
         buttonLink="/projects/petfriendly"
         decorativeLabel="Ran"
@@ -147,7 +147,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Flywheel: Product Leadership"
-        description="I led delivery for Flywheel's second product, Local Pro. Ran the roadmap from user research through go-to-market, across engineering, design, and marketing."
+        description="Led delivery for Flywheel's second product, Local Pro, running the roadmap from user research through go-to-market across engineering, design, and marketing."
         buttonText="How I led it"
         buttonLink="/projects/flywheel"
         decorativeLabel="Led"

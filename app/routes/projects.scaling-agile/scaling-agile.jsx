@@ -75,9 +75,10 @@ export const ScalingAgile = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Coaching & Frameworks</ProjectSectionHeading>
                   <ProjectSectionText>
-                    I worked across Scrum, Kanban, and SAFe depending on what each team
-                    needed. Some teams thrived with strict two-week sprints. Others needed
-                    the flexibility of Kanban flow. At the portfolio level I introduced
+                    The framework varied by team: Scrum, Kanban, or SAFe, depending on what
+                    each one needed. Some thrived with strict two-week sprints. Others
+                    needed the flexibility of Kanban flow. At the portfolio level I
+                    introduced
                     release planning and PI planning, which gave the whole organization
                     visibility into what was coming and when.
                   </ProjectSectionText>
@@ -115,11 +116,10 @@ export const ScalingAgile = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Certification & Growth</ProjectSectionHeading>
                   <ProjectSectionText>
-                    I hold Scrum certifications from Jeff Sutherland, co-creator of Scrum,
-                    and Mike Cohn, one of the founders of the Scrum Alliance. The
-                    certifications were a starting point. Most of what I learned came from
-                    years of coaching teams through the reality of building software at
-                    scale.
+                    The Scrum certifications came from Jeff Sutherland, co-creator of
+                    Scrum, and Mike Cohn, one of the founders of the Scrum Alliance. They
+                    were a starting point. Most of the learning came from years of coaching
+                    teams through the reality of building software at scale.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
