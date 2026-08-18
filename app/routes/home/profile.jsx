@@ -28,7 +28,9 @@ const ProfileText = ({ visible, titleId }) => (
       Building is part of the job for me, not a side interest. Writing and shipping code,
       prototyping with LLM-based tools, staying close to how the product actually gets
       made. Coming up through networking means I can still read the stack, which shortens
-      a lot of conversations with engineers. Feel free to{' '}
+      a lot of conversations with engineers. The work I am proudest of is the kind where
+      people were trusted to make the call inside their own scope and knew exactly where
+      the edges were. Feel free to{' '}
       <Link href={`mailto:${config.email}`}>say hello</Link>.
     </Text>
   </Fragment>

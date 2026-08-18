@@ -61,6 +61,12 @@ export const ScalingAgile = () => {
                     and built the cross-team coordination a group that size needs. I also
                     coached leaders through the problems that come with fast growth.
                   </ProjectSectionText>
+                  <ProjectSectionText>
+                    Going from 20 to 80 usually costs a team its working conditions.
+                    Keeping that from happening was as much of the job as the structure.
+                    Teams kept the autonomy they had at 20, and the coordination we added
+                    on top was there to protect it rather than to police it.
+                  </ProjectSectionText>
                 </ProjectTextRow>
               </div>
               {/* Replace with team growth visual, org chart, or team photo */}

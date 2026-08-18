@@ -157,6 +157,13 @@ export const PetFriendly = () => {
                 blocked anyone, and that no group was waiting on an answer nobody had been
                 asked for.
               </ProjectSectionText>
+              <ProjectSectionText>
+                Twelve contractors on three continents cannot be supervised, so they
+                were not. Each group decided inside its own scope and was told plainly
+                where the edges were. Freedom with responsibility attached costs less than
+                oversight and it survives a nine-hour time difference, which supervision
+                does not.
+              </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>

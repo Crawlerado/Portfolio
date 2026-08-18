@@ -79,6 +79,12 @@ export const Flywheel = () => {
                     to set priorities. The product helped web developers manage local
                     WordPress environments.
                   </ProjectSectionText>
+                  <ProjectSectionText>
+                    Research only changes anything if people are free to act on it.
+                    Engineering and design sat in the sessions instead of receiving a
+                    summary, so priorities got argued out in the open and nobody had to
+                    relitigate them later.
+                  </ProjectSectionText>
                 </ProjectTextRow>
               </div>
               {/* Replace with user research artifacts or roadmap visual */}
