@@ -8,6 +8,7 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
+import { Link } from '~/components/link';
 import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
 import styles from './scaling-agile.module.css';
@@ -55,11 +56,14 @@ export const ScalingAgile = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Scaling the Organization</ProjectSectionHeading>
                   <ProjectSectionText>
-                    When I joined Flywheel as Agile Coach, engineering was around 20 people
-                    running a handful of Scrum teams. By the time I moved on it was 80-plus
-                    builders. I ran the coaching, reshaped team structures as groups split,
-                    and built the cross-team coordination a group that size needs. I also
-                    coached leaders through the problems that come with fast growth.
+                    Over my four years at Flywheel the Scrum organization went from around
+                    20 people running a handful of teams to more than 80 builders.
+                    Coaching it through that growth was the second half of my time there,
+                    after the{' '}
+                    <Link href="/projects/flywheel">product work</Link>. I ran the
+                    coaching, reshaped team structures as groups split, and built the
+                    cross-team coordination a group that size needs. I also coached leaders
+                    through the problems that come with fast growth.
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Going from 20 to 80 usually costs a team its working conditions.
@@ -75,6 +79,26 @@ export const ScalingAgile = () => {
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>Coaching the Coaches</ProjectSectionHeading>
+              <ProjectSectionText>
+                The agile group itself was four people, and it reported to me. Coaching
+                coaches turns out to be a different job from coaching teams, and most of
+                it is deciding what to leave alone.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Each coach held their own teams and their own judgment about what those
+                teams needed. My part was making the boundaries clear and then backing
+                their calls in front of leadership when a team chose something unusual. A
+                coach who gets overruled in public once stops making the call at all, and
+                after that every decision comes back to me, which does not survive past a
+                handful of teams.
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
             <div className={styles.columns} data-alternate="true">
               <div className={styles.textColumn}>
@@ -93,6 +117,25 @@ export const ScalingAgile = () => {
               {/* Replace with sprint board, planning session, or framework diagram */}
               <PlaceholderImage />
             </div>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection light className={styles.compactSection}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="l" noMargin>
+              <ProjectSectionHeading>Agile Outside Engineering</ProjectSectionHeading>
+              <ProjectSectionText>
+                Marketing, customer experience, design, and product picked up the same
+                practices. Engineering usually gets there first and then wonders why the
+                rest of the company still works in quarterly batches.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Those groups needed a translation rather than a rollout. A marketing team
+                running two-week iterations is not doing Scrum with different nouns, and
+                pretending otherwise is how process earns a bad name. What carried over
+                was the small parts: a visible backlog, a standing retrospective, and
+                permission to stop something that was not working.
+              </ProjectSectionText>
+            </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection className={styles.compactSection}>
