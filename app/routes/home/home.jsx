@@ -147,7 +147,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Flywheel: Product Leadership"
-        description="Led delivery for Flywheel's second product, Local Pro, running the roadmap from user research through go-to-market across engineering, design, and marketing."
+        description="Led product and delivery on Flywheel's developer tools: Local, the desktop app WordPress developers build on, Local Pro from discovery through launch, and the Cloud Platform team through a move to Kubernetes."
         buttonText="How I led it"
         buttonLink="/projects/flywheel"
         decorativeLabel="Led"
