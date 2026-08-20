@@ -95,7 +95,11 @@
     height: 100%;
   }
 
-  & video {
+  /* The placeholder img has to crop exactly like the video does. Styling only
+     `video` here left the placeholder at height:auto, so it top-aligned in the
+     grid cell and showed the top band of the source instead of the same crop. */
+  & video,
+  & img {
     width: 100%;
     height: 100%;
     display: block;
