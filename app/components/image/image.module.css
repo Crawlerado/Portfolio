@@ -101,7 +101,8 @@
     }
   }
 
-  .button {
+  /* Doubled class so it outranks the Button component's own position: relative */
+  .button.button {
     opacity: 0;
     position: absolute;
     top: var(--spaceM);
