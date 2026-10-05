@@ -80,7 +80,10 @@ export function ProjectSummary({
             '--imageOffsetX': model.imageOffsetX || '0%',
             ...(model.videoCrop && { '--videoCrop': model.videoCrop }),
             ...(model.videoCropY && { '--videoCropY': model.videoCropY }),
-            ...(model.imageCrop && { '--imageCrop': model.imageCrop }),
+            // The placeholder shares the frame with the video, so it takes the video's crop
+            ...((model.imageCrop || model.videoCrop) && {
+              '--imageCrop': model.imageCrop || model.videoCrop,
+            }),
             ...(model.imageCropY && { '--imageCropY': model.imageCropY }),
           }}
         >

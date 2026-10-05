@@ -219,8 +219,9 @@ export const PetFriendly = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionHeading>Building the Team</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Hiring and onboarding sat with me too, along with the routines a small
-                    startup needs to stay organized as it grows.
+                    I ran hiring and onboarding together with the people team. My focus was
+                    team structure, the skills we needed, and the people we brought on, along
+                    with the routines a small startup needs to stay organized as it grows.
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Onboarding mattered more than usual here. With contractors joining from

@@ -30,10 +30,13 @@ import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
 
+// Hidden until the Flywheel case study is finished.
+const SHOW_FLYWHEEL = false;
+
 export const meta = () => {
   return baseMeta({
     title: 'Product Leader, Agile Coach & Builder',
-    description: `Product leader, agile coach, and builder. Former Chief of Staff. Scaled teams from 20 to 80+. Trained thousands across four countries.`,
+    description: `Product leader, agile coach, and builder. Former Chief of Staff. Scaled teams from 20 to 80+. Trained thousands in Agile and Scrum.`,
   });
 };
 
@@ -76,7 +79,7 @@ export const Home = () => {
     );
 
     sections.forEach(section => {
-      sectionObserver.observe(section.current);
+      if (section.current) sectionObserver.observe(section.current);
     });
 
     indicatorObserver.observe(intro.current);
@@ -141,38 +144,40 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Flywheel: Product Leadership"
-        description="Led product and delivery on Flywheel's developer tools: Local, the desktop app WordPress developers build on, Local Pro from discovery through launch, and the Cloud Platform team through a move to Kubernetes."
-        buttonText="How I led it"
-        buttonLink="/projects/flywheel"
-        decorativeLabel="Led"
-        model={{
-          alt: 'Agile scaling team collaboration and sprint planning',
-          imageScale: 1.4,
-          imageCrop: '1280 / 770',
-          imageCropY: '21%',
-          imageOffsetX: '3.5%',
-          textures: [
-            {
-              srcSet: `${agileScaling} 1280w, ${agileScalingLarge} 3916w`,
-              placeholder: agileScalingPlaceholder,
-            },
-          ],
-        }}
-      />
+      {SHOW_FLYWHEEL && (
+        <ProjectSummary
+          id="project-3"
+          sectionRef={projectThree}
+          visible={visibleSections.includes(projectThree.current)}
+          index={3}
+          title="Flywheel: Product Leadership"
+          description="Led product and delivery on Flywheel's developer tools: Local, the desktop app WordPress developers build on, Local Pro from discovery through launch, and the Cloud Platform team through a move to Kubernetes."
+          buttonText="How I led it"
+          buttonLink="/projects/flywheel"
+          decorativeLabel="Led"
+          model={{
+            alt: 'Agile scaling team collaboration and sprint planning',
+            imageScale: 1.4,
+            imageCrop: '1280 / 770',
+            imageCropY: '21%',
+            imageOffsetX: '3.5%',
+            textures: [
+              {
+                srcSet: `${agileScaling} 1280w, ${agileScalingLarge} 3916w`,
+                placeholder: agileScalingPlaceholder,
+              },
+            ],
+          }}
+        />
+      )}
       <ProjectSummary
         id="project-4"
-        alternate
+        alternate={SHOW_FLYWHEEL}
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
-        index={4}
+        index={SHOW_FLYWHEEL ? 4 : 3}
         title="Scaling Agile: 20 to 80+ Builders"
-        description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. I also trained client teams in four countries on Scrum, Kanban, and release planning."
+        description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. At Mutual of Omaha, I trained client teams on Scrum, Kanban, and release planning."
         buttonText="How I scaled it"
         buttonLink="/projects/scaling-agile"
         decorativeLabel="Scaled"
@@ -188,9 +193,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-5"
+        alternate={!SHOW_FLYWHEEL}
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
-        index={5}
+        index={SHOW_FLYWHEEL ? 5 : 4}
         title="Giving Back"
         description="Board leadership, mentoring the same kid for nine years, food drives, and shelter volunteering. Showing up matters."
         buttonText="See the work"
@@ -208,10 +214,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-6"
-        alternate
+        alternate={SHOW_FLYWHEEL}
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
-        index={6}
+        index={SHOW_FLYWHEEL ? 6 : 5}
         title="Crawlerado Bikepacking"
         description="A bikepacking community I started in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. I design, build, and maintain it."
         buttonText="Visit crawlerado.com"
@@ -219,6 +225,7 @@ export const Home = () => {
         decorativeLabel="Rode"
         model={{
           alt: 'Crawlerado bikepacking community website',
+          videoCrop: '1200 / 688',
           textures: [
             {
               src: crawleradoVideo,
@@ -229,9 +236,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-7"
+        alternate={!SHOW_FLYWHEEL}
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectSeven.current)}
-        index={7}
+        index={SHOW_FLYWHEEL ? 7 : 6}
         overlay={<AudioWaveform />}
         title="Audio Engineer"
         description="Before product, I made records. Engineering, mixing, mastering, and session work on 50-plus releases across the Midwest."

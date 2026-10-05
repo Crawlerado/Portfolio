@@ -8,14 +8,13 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
-import { Link } from '~/components/link';
 import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
 import styles from './scaling-agile.module.css';
 
 const title = 'Scaling Agile: 20 to 80+ Builders';
 const description =
-  'Agile Coach at Flywheel/WP Engine while the Scrum organization grew fourfold, from 20 builders to 80-plus. Trained client teams in four countries on Agile, Scrum, Kanban, and release planning.';
+  'Agile Coach at Flywheel/WP Engine while the Scrum organization grew fourfold, from 20 builders to 80-plus. At Mutual of Omaha, trained client teams on Agile, Scrum, Kanban, and release planning.';
 const roles = ['Agile Coach', 'Scrum Master', 'Training', 'Organizational Scaling'];
 
 export const meta = () => {
@@ -59,8 +58,7 @@ export const ScalingAgile = () => {
                     Over my four years at Flywheel the Scrum organization went from around
                     20 people running a handful of teams to more than 80 builders.
                     Coaching it through that growth was the second half of my time there,
-                    after the{' '}
-                    <Link href="/projects/flywheel">product work</Link>. I ran the
+                    after the product work. I ran the
                     coaching, reshaped team structures as groups split, and built the
                     cross-team coordination a group that size needs. I also coached leaders
                     through the problems that come with fast growth.
@@ -143,13 +141,11 @@ export const ScalingAgile = () => {
             <div className={styles.columns}>
               <div className={styles.textColumn}>
                 <ProjectTextRow noMargin>
-                  <ProjectSectionHeading>Training Across Borders</ProjectSectionHeading>
+                  <ProjectSectionHeading>Training at Scale</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Beyond internal coaching, I trained thousands of clients across four
-                    countries on Agile, Scrum, Kanban, and release planning. These were
+                    At Mutual of Omaha, I trained thousands of clients on Agile, Scrum,
+                    Kanban, and release planning. These were
                     hands-on workshops with practical tools teams could apply right away.
-                    The clients ranged from startups trying Scrum for the first time to
-                    enterprises scaling across departments.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
