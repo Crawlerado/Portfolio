@@ -104,7 +104,7 @@ export const Home = () => {
         visible={visibleSections.includes(productLeadershipRef.current)}
         index={1}
         title="Product Leadership"
-        description="Ten years of owning products end to end: Mutual of Omaha's first big data platform, Local and Local Pro at Flywheel, and an executive product ecosystem at Products That Count, where program engagement doubled. Along the way, founded and chaired a Product Management Community of Practice."
+        description="Ten years of owning products end to end: Mutual of Omaha's first big data platform, Local and Local Pro at Flywheel, and an executive product ecosystem at Products That Count, where program engagement doubled. Along the way, founded and chaired a Product Management Community of Practice and mentored and trained more than 1,000 people in modern product practice."
         buttonText="How I lead product"
         buttonLink="/projects/product-leadership"
         decorativeLabel="Led"

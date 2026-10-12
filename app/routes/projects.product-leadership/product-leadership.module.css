@@ -111,3 +111,22 @@
 .link {
   margin-top: var(--spaceL);
 }
+
+.columns[data-stacked='true'] {
+  margin-top: var(--space3XL);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space2XL);
+  }
+}
+
+.figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.caption {
+  margin-top: var(--spaceM);
+  font-size: var(--fontSizeBodyS);
+  color: var(--textLight);
+}

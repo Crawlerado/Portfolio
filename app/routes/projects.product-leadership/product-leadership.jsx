@@ -1,5 +1,7 @@
-import oddity from '~/assets/oddity.jpg';
-import oddityPlaceholder from '~/assets/oddity-placeholder.jpg';
+import mesaStore from '~/assets/mesa-store.mp4';
+import mesaStorePlaceholder from '~/assets/mesa-store-placeholder.jpg';
+import oddityStore from '~/assets/oddity-store.mp4';
+import oddityStorePlaceholder from '~/assets/oddity-store-placeholder.jpg';
 import findUnpaved from '~/assets/find-unpaved.jpg';
 import findUnpavedPlaceholder from '~/assets/find-unpaved-placeholder.jpg';
 import petFriendlyProducts from '~/assets/petfriendly-products.jpg';
@@ -87,22 +89,48 @@ export const ProductLeadership = () => {
                   <ProjectSectionText>
                     For Mesa Coffee Company, that meant a move from Wix to Shopify built
                     around subscriptions, with every old page redirected so years of
-                    search ranking carried across. Oddity Cycles, a bicycle component
-                    brand, got a rebuilt storefront, a prioritized product pipeline, and
-                    order fulfillment that no longer ran on manual steps.
+                    search ranking carried across.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
-              <div className={styles.imageWrap}>
-                <Image
-                  srcSet={`${oddity} 1400w`}
-                  width={1400}
-                  height={840}
-                  placeholder={oddityPlaceholder}
-                  alt="The Oddity Cycles storefront"
-                  sizes={imageSizes}
-                />
+              <figure className={styles.figure}>
+                <div className={styles.imageWrap}>
+                  <Image
+                    src={mesaStore}
+                    placeholder={mesaStorePlaceholder}
+                    alt="A walkthrough of the Mesa Coffee Company Shopify store: home page, coffee collection, and the subscription product page"
+                    sizes={imageSizes}
+                  />
+                </div>
+                <figcaption className={styles.caption}>
+                  Mesa Coffee Company on Shopify, ahead of launch
+                </figcaption>
+              </figure>
+            </div>
+            <div className={styles.columns} data-alternate="true" data-stacked="true">
+              <div className={styles.textColumn}>
+                <ProjectTextRow noMargin>
+                  <ProjectSectionText>
+                    Oddity Cycles builds titanium frames and components by hand in Fort
+                    Collins. It got a rebuilt storefront, a prioritized product pipeline,
+                    and order fulfillment that no longer ran on manual steps, with product
+                    pages that carry the full spec sheet a custom-bike buyer looks for.
+                  </ProjectSectionText>
+                </ProjectTextRow>
               </div>
+              <figure className={styles.figure}>
+                <div className={styles.imageWrap}>
+                  <Image
+                    src={oddityStore}
+                    placeholder={oddityStorePlaceholder}
+                    alt="A walkthrough of the Oddity Cycles Shopify store: home page, the shop, and the Razorbar product page"
+                    sizes={imageSizes}
+                  />
+                </div>
+                <figcaption className={styles.caption}>
+                  Oddity Cycles on Shopify, ahead of launch
+                </figcaption>
+              </figure>
             </div>
           </ProjectSectionContent>
         </ProjectSection>
