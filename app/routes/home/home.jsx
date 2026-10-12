@@ -44,6 +44,7 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
+  const productLeadershipRef = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
@@ -55,7 +56,7 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, skills, details];
+    const sections = [intro, productLeadershipRef, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, skills, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -99,9 +100,34 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        sectionRef={productLeadershipRef}
+        visible={visibleSections.includes(productLeadershipRef.current)}
+        index={1}
+        title="Product Leadership"
+        description="Ten years of owning products end to end: Mutual of Omaha's first big data platform, Local and Local Pro at Flywheel, and an executive product ecosystem at Products That Count, where program engagement doubled. Along the way, founded and chaired a Product Management Community of Practice."
+        buttonText="How I lead product"
+        buttonLink="/projects/product-leadership"
+        decorativeLabel="Led"
+        model={{
+          alt: 'The Flywheel product and engineering team',
+          imageScale: 1.4,
+          imageCrop: '1280 / 770',
+          imageCropY: '21%',
+          imageOffsetX: '3.5%',
+          textures: [
+            {
+              srcSet: `${agileScaling} 1280w, ${agileScalingLarge} 3916w`,
+              placeholder: agileScalingPlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
-        index={1}
+        index={2}
         title="Building and Shipping Products"
         description="Live sites and apps I designed and shipped: nathank.build, odditycycles.com, crawlerado.com and its Find Unpaved gravel map, sleepmat.app, and hellokristin.co. I write the code, using LLM-based tools as my engineering partner."
         buttonText="View projects"
@@ -120,11 +146,10 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
-        alternate
+        id="project-3"
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        index={3}
         previewMaxWidth="450px"
         title="PetFriendly: Chief of Staff"
         description="Co-ran a pet wellness startup with the CEO. Led a 23-person product org across three countries, ran operations and the leadership team, and together we tripled the product offering."
@@ -146,10 +171,11 @@ export const Home = () => {
       />
       {SHOW_FLYWHEEL && (
         <ProjectSummary
-          id="project-3"
+          id="project-4"
+          alternate
           sectionRef={projectThree}
           visible={visibleSections.includes(projectThree.current)}
-          index={3}
+          index={4}
           title="Flywheel: Product Leadership"
           description="Led product and delivery on Flywheel's developer tools: Local, the desktop app WordPress developers build on, Local Pro from discovery through launch, and the Cloud Platform team through a move to Kubernetes."
           buttonText="How I led it"
@@ -171,11 +197,11 @@ export const Home = () => {
         />
       )}
       <ProjectSummary
-        id="project-4"
-        alternate={SHOW_FLYWHEEL}
+        id="project-5"
+        alternate={!SHOW_FLYWHEEL}
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
-        index={SHOW_FLYWHEEL ? 4 : 3}
+        index={SHOW_FLYWHEEL ? 5 : 4}
         title="Scaling Agile: 20 to 80+ Builders"
         description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. At Mutual of Omaha, I trained client teams on Scrum, Kanban, and release planning."
         buttonText="How I scaled it"
@@ -192,11 +218,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-5"
-        alternate={!SHOW_FLYWHEEL}
+        id="project-6"
+        alternate={SHOW_FLYWHEEL}
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
-        index={SHOW_FLYWHEEL ? 5 : 4}
+        index={SHOW_FLYWHEEL ? 6 : 5}
         title="Giving Back"
         description="Board leadership, mentoring the same kid for nine years, food drives, and shelter volunteering. Showing up matters."
         buttonText="See the work"
@@ -213,11 +239,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-6"
-        alternate={SHOW_FLYWHEEL}
+        id="project-7"
+        alternate={!SHOW_FLYWHEEL}
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
-        index={SHOW_FLYWHEEL ? 6 : 5}
+        index={SHOW_FLYWHEEL ? 7 : 6}
         title="Crawlerado Bikepacking"
         description="A bikepacking community I started in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. I design, build, and maintain it."
         buttonText="Visit crawlerado.com"
@@ -235,11 +261,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-7"
-        alternate={!SHOW_FLYWHEEL}
+        id="project-8"
+        alternate={SHOW_FLYWHEEL}
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectSeven.current)}
-        index={SHOW_FLYWHEEL ? 7 : 6}
+        index={SHOW_FLYWHEEL ? 8 : 7}
         overlay={<AudioWaveform />}
         title="Audio Engineer"
         description="Before product, I made records. Engineering, mixing, mastering, and session work on 50-plus releases across the Midwest."

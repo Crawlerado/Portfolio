@@ -1,0 +1,113 @@
+.compactSection > [data-padding] {
+  --sectionPadding: var(--space3XL);
+
+  @media (--mediaTablet) {
+    --sectionPadding: var(--space2XL);
+  }
+
+  @media (--mediaMobile) {
+    --sectionPadding: var(--spaceXL);
+  }
+}
+
+.columns {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space3XL);
+
+  @media (--mediaTablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.columns[data-alternate='true'] {
+  direction: rtl;
+
+  & > * {
+    direction: ltr;
+  }
+
+  @media (--mediaTablet) {
+    direction: ltr;
+  }
+}
+
+.textColumn {
+  min-width: 0;
+}
+
+.imageWrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--black);
+  box-shadow: 0 0 60px color-mix(in lab, var(--background) 40%, transparent);
+  will-change: transform;
+  backface-visibility: hidden;
+
+  @media (--mediaMobile) {
+    border-radius: 12px;
+  }
+}
+
+.eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spaceS) var(--spaceM);
+  margin-bottom: var(--spaceM);
+  font-size: var(--fontSizeBodyS);
+  font-weight: var(--fontWeightMedium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.eyebrowYears {
+  color: var(--textLight);
+}
+
+.eyebrowYears::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  margin-right: var(--spaceM);
+  vertical-align: middle;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spaceL);
+  margin-top: var(--spaceXL);
+  padding-top: var(--spaceL);
+  border-top: 1px solid color-mix(in lab, var(--text) 20%, transparent);
+
+  @media (--mediaMobile) {
+    grid-template-columns: 1fr;
+    gap: var(--spaceM);
+  }
+}
+
+.statValue {
+  display: block;
+  font-size: calc((32 / 16) * 1rem);
+  font-weight: var(--fontWeightMedium);
+  line-height: 1.1;
+  color: var(--textTitle);
+}
+
+.statLabel {
+  display: block;
+  margin-top: var(--spaceXS);
+  font-size: var(--fontSizeBodyS);
+  color: var(--textLight);
+}
+
+.link {
+  margin-top: var(--spaceL);
+}
