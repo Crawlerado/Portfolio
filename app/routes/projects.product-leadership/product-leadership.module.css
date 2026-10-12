@@ -130,3 +130,9 @@
   font-size: var(--fontSizeBodyS);
   color: var(--textLight);
 }
+
+.imageStack {
+  display: grid;
+  gap: var(--spaceXL);
+  min-width: 0;
+}

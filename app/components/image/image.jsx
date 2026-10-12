@@ -70,10 +70,12 @@ const ImageElements = ({
   width,
   height,
   noPauseButton,
+  alwaysPlay,
   cover,
   ...rest
 }) => {
-  const reduceMotion = useReducedMotion();
+  // alwaysPlay: muted, silent demo videos that should run even with reduced motion on.
+  const reduceMotion = useReducedMotion() && !alwaysPlay;
   const [showPlaceholder, setShowPlaceholder] = useState(true);
   const [playing, setPlaying] = useState(!reduceMotion);
   const [videoSrc, setVideoSrc] = useState();

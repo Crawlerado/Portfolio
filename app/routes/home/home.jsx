@@ -51,8 +51,8 @@ const cardAlternate = id => cardIndex(id) % 2 === 0;
 
 export const meta = () => {
   return baseMeta({
-    title: 'Product Leader, Agile Coach & Builder',
-    description: `Product leader, agile coach, and builder. Former Chief of Staff. Scaled teams from 20 to 80+. Trained thousands in Agile and Scrum.`,
+    title: 'Product Leader',
+    description: `Product leader with 10+ years owning products end to end, from subscription ecommerce to developer tools and data platforms. Former Chief of Staff. Mentored and trained more than 1,000 people in modern product practice.`,
   });
 };
 

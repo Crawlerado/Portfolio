@@ -4,6 +4,8 @@ import oddityStore from '~/assets/oddity-store.mp4';
 import oddityStorePlaceholder from '~/assets/oddity-store-placeholder.jpg';
 import findUnpaved from '~/assets/find-unpaved.jpg';
 import findUnpavedPlaceholder from '~/assets/find-unpaved-placeholder.jpg';
+import sleepmatWeb from '~/assets/sleepmat-web.jpg';
+import sleepmatWebPlaceholder from '~/assets/sleepmat-web-placeholder.jpg';
 import petFriendlyProducts from '~/assets/petfriendly-products.jpg';
 import petFriendlyProductsPlaceholder from '~/assets/petfriendly-products-placeholder.jpg';
 import local from '~/assets/local.jpg';
@@ -99,6 +101,7 @@ export const ProductLeadership = () => {
                 <div className={styles.imageWrap}>
                   <Image
                     src={mesaStore}
+                    alwaysPlay
                     placeholder={mesaStorePlaceholder}
                     alt="A walkthrough of the Mesa Coffee Company Shopify store: home page, coffee collection, and the subscription product page"
                     sizes={imageSizes}
@@ -124,6 +127,7 @@ export const ProductLeadership = () => {
                 <div className={styles.imageWrap}>
                   <Image
                     src={oddityStore}
+                    alwaysPlay
                     placeholder={oddityStorePlaceholder}
                     alt="A walkthrough of the Oddity Cycles Shopify store: home page, the shop, and the Razorbar product page"
                     sizes={imageSizes}
@@ -174,15 +178,27 @@ export const ProductLeadership = () => {
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
-              <div className={styles.imageWrap}>
-                <Image
-                  srcSet={`${findUnpaved} 1400w`}
-                  width={1400}
-                  height={876}
-                  placeholder={findUnpavedPlaceholder}
-                  alt="The Find Unpaved gravel road map"
-                  sizes={imageSizes}
-                />
+              <div className={styles.imageStack}>
+                <div className={styles.imageWrap}>
+                  <Image
+                    srcSet={`${findUnpaved} 1400w`}
+                    width={1400}
+                    height={876}
+                    placeholder={findUnpavedPlaceholder}
+                    alt="The Find Unpaved gravel road map"
+                    sizes={imageSizes}
+                  />
+                </div>
+                <div className={styles.imageWrap}>
+                  <Image
+                    srcSet={`${sleepmatWeb} 1400w`}
+                    width={1400}
+                    height={876}
+                    placeholder={sleepmatWebPlaceholder}
+                    alt="SleepMat's offline map of shelter, food, healthcare, and other resources"
+                    sizes={imageSizes}
+                  />
+                </div>
               </div>
             </div>
           </ProjectSectionContent>
@@ -247,11 +263,14 @@ export const ProductLeadership = () => {
                     across three countries.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    It ran on a short scorecard built for a subscription business: retention at three and twelve months, average box value,
+                    It ran on a short scorecard for a subscription business aiming to double
+                    its peak ARR year over year: retention at three and twelve months, average box value,
                     cross-sell and upsell into a second product, conversion, and customer
                     NPS. The bet was to keep customers longer and fill more of each box
                     rather than buy more traffic, while holding a customer NPS of 75
-                    through the move to the new platform.
+                    through the move to the new platform. A/B tests on the quiz, checkout,
+                    and offers ran the whole time, so every change to the funnel had to earn
+                    its place.
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Customer support shaped the platform as much as engineering did. The
@@ -314,9 +333,10 @@ export const ProductLeadership = () => {
                     WordPress developers build on, Local Pro from user research to launch,
                     and the Cloud Platform team through its move to Kubernetes. To make the
                     practice outlast any one team, I founded and chaired the Product
-                    Management Community of Practice, mentored and trained more than 1,000
-                    people in modern product practice, and moved the company toward
-                    Minimum Lovable Product thinking.
+                    Management Community of Practice and moved the company toward Minimum
+                    Lovable Product thinking. Counting Flywheel, TEAM Software, Mutual of
+                    Omaha, and PetFriendly, that mentoring and training reached more than
+                    1,000 people.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
@@ -382,8 +402,8 @@ export const ProductLeadership = () => {
               </ProjectSectionText>
               <ProjectSectionText>
                 The rebuilt functions changed what the industry expected from its
-                software, and the growing offering carried the company through to its
-                acquisition.
+                software, and the offering kept growing through to the company&apos;s acquisition
+                after I left.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
