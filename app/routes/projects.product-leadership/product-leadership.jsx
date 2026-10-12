@@ -300,8 +300,9 @@ export const ProductLeadership = () => {
                     WordPress developers build on, Local Pro from user research to launch,
                     and the Cloud Platform team through its move to Kubernetes. To make the
                     practice outlast any one team, I founded and chaired the Product
-                    Management Community of Practice and moved the company toward Minimum
-                    Lovable Product thinking.
+                    Management Community of Practice, mentored and trained more than 1,000
+                    people in modern product practice, and moved the company toward
+                    Minimum Lovable Product thinking.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
