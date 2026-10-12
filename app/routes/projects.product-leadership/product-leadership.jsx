@@ -87,11 +87,14 @@ export const ProductLeadership = () => {
                     a third order. My consulting work starts here: mapping the customer
                     journey, reading where buying habits are shifting, and tying each
                     change back to customer lifetime value, the number that decides
-                    whether growth pays for itself.
+                    whether growth pays for itself. Underneath it sit the usual reads:
+                    conversion rate, average order value, repeat purchase rate,
+                    subscription churn, and cart abandonment.
                   </ProjectSectionText>
                   <ProjectSectionText>
                     For Mesa Coffee Company, that meant a move from Wix to Shopify built
-                    around subscriptions, with a focus on Shopify Collective:
+                    around Shopify Subscriptions and Judge.me reviews, with a focus on
+                    Shopify Collective:
                     pulling partner brands&apos; products in, and expanding Mesa&apos;s coffee out
                     to other retailers.
                   </ProjectSectionText>
@@ -117,8 +120,8 @@ export const ProductLeadership = () => {
                 <ProjectTextRow noMargin>
                   <ProjectSectionText>
                     Oddity Cycles builds titanium frames and components by hand in Fort
-                    Collins. It got a rebuilt storefront, a prioritized product pipeline,
-                    and order fulfillment that no longer ran on manual steps, with product
+                    Collins. It got a rebuilt Shopify storefront, a product pipeline prioritized
+                    with MoSCoW, and order fulfillment that no longer ran on manual steps, with product
                     pages that carry the full spec sheet a custom-bike buyer looks for.
                   </ProjectSectionText>
                 </ProjectTextRow>
