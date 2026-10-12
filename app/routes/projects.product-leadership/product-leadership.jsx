@@ -143,69 +143,6 @@ export const ProductLeadership = () => {
 
         <ProjectSection light className={styles.compactSection}>
           <ProjectSectionContent>
-            <div className={styles.columns} data-alternate="true">
-              <div className={styles.textColumn}>
-                <ProjectTextRow noMargin>
-                  <Eyebrow company="Personal products" years="Ongoing" />
-                  <ProjectSectionHeading>Building for the Community</ProjectSectionHeading>
-                  <ProjectSectionText>
-                    The same approach runs through the products I design and build
-                    myself, with LLM-based tools as my engineering partner. Crawlerado
-                    started as a bikepacking group in Northern Colorado and now has more
-                    than 70 members who ride together in person, with{' '}
-                    <Link href="https://crawlerado.com">crawlerado.com</Link> as its home
-                    base.{' '}
-                    <Link href="https://crawlerado.com/explore">Find Unpaved</Link> takes
-                    that need worldwide: a map of gravel and dirt roads, built on a
-                    pipeline that turns OpenStreetMap data into vector tiles, with a
-                    self-hosted routing engine behind it.
-                  </ProjectSectionText>
-                  <ProjectSectionText>
-                    <Link href="https://sleepmat.app">SleepMat</Link> came out of
-                    conversations with community leaders who work with people without
-                    housing. It finds shelter, food, showers, and healthcare with no
-                    signal and no account, because the people who need it most are often
-                    the ones without a data plan. Listings come from federal and municipal
-                    sources and ship inside the app, so the first launch works on a dead
-                    connection.
-                  </ProjectSectionText>
-                  <ProjectSectionText>
-                    Two portfolio sites share one component foundation:{' '}
-                    <Link href="https://hellokristin.co">hellokristin.co</Link>, which
-                    brings a communications professional&apos;s writing, campaigns, and
-                    travel photography into one place, and nathank.build, the site
-                    you&apos;re reading.
-                  </ProjectSectionText>
-                </ProjectTextRow>
-              </div>
-              <div className={styles.imageStack}>
-                <div className={styles.imageWrap}>
-                  <Image
-                    srcSet={`${findUnpaved} 1400w`}
-                    width={1400}
-                    height={876}
-                    placeholder={findUnpavedPlaceholder}
-                    alt="The Find Unpaved gravel road map"
-                    sizes={imageSizes}
-                  />
-                </div>
-                <div className={styles.imageWrap}>
-                  <Image
-                    srcSet={`${sleepmatWeb} 1400w`}
-                    width={1400}
-                    height={876}
-                    placeholder={sleepmatWebPlaceholder}
-                    alt="SleepMat's offline map of shelter, food, healthcare, and other resources"
-                    sizes={imageSizes}
-                  />
-                </div>
-              </div>
-            </div>
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ProjectSection className={styles.compactSection}>
-          <ProjectSectionContent>
             <ProjectTextRow width="l" noMargin>
               <Eyebrow company="Products That Count" years="2024 to 2025" />
               <ProjectSectionHeading>Leading the Product Leaders</ProjectSectionHeading>
@@ -241,7 +178,7 @@ export const ProductLeadership = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-        <ProjectSection light className={styles.compactSection}>
+        <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
             <div className={styles.columns}>
               <div className={styles.textColumn}>
@@ -305,7 +242,7 @@ export const ProductLeadership = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-        <ProjectSection className={styles.compactSection}>
+        <ProjectSection light className={styles.compactSection}>
           <ProjectSectionContent>
             <div className={styles.columns} data-alternate="true">
               <div className={styles.textColumn}>
@@ -354,7 +291,7 @@ export const ProductLeadership = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-        <ProjectSection light className={styles.compactSection}>
+        <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
             <ProjectTextRow width="l" noMargin>
               <Eyebrow company="Mutual of Omaha" years="2017 to 2018" />
@@ -381,7 +318,7 @@ export const ProductLeadership = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-        <ProjectSection className={styles.compactSection}>
+        <ProjectSection light className={styles.compactSection}>
           <ProjectSectionContent>
             <ProjectTextRow width="l" noMargin>
               <Eyebrow company="TEAM Software" years="2015 to 2017" />
@@ -406,6 +343,69 @@ export const ProductLeadership = () => {
                 after I left.
               </ProjectSectionText>
             </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+
+        <ProjectSection className={styles.compactSection}>
+          <ProjectSectionContent>
+            <div className={styles.columns} data-alternate="true">
+              <div className={styles.textColumn}>
+                <ProjectTextRow noMargin>
+                  <Eyebrow company="Personal products" years="Ongoing" />
+                  <ProjectSectionHeading>Building for the Community</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    The same approach runs through the products I design and build
+                    myself, with LLM-based tools as my engineering partner. Crawlerado
+                    started as a bikepacking group in Northern Colorado and now has more
+                    than 70 members who ride together in person, with{' '}
+                    <Link href="https://crawlerado.com">crawlerado.com</Link> as its home
+                    base.{' '}
+                    <Link href="https://crawlerado.com/explore">Find Unpaved</Link> takes
+                    that need worldwide: a map of gravel and dirt roads, built on a
+                    pipeline that turns OpenStreetMap data into vector tiles, with a
+                    self-hosted routing engine behind it.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    <Link href="https://sleepmat.app">SleepMat</Link> came out of
+                    conversations with community leaders who work with people without
+                    housing. It finds shelter, food, showers, and healthcare with no
+                    signal and no account, because the people who need it most are often
+                    the ones without a data plan. Listings come from federal and municipal
+                    sources and ship inside the app, so the first launch works on a dead
+                    connection.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Two portfolio sites share one component foundation:{' '}
+                    <Link href="https://hellokristin.co">hellokristin.co</Link>, which
+                    brings a communications professional&apos;s writing, campaigns, and
+                    travel photography into one place, and nathank.build, the site
+                    you&apos;re reading.
+                  </ProjectSectionText>
+                </ProjectTextRow>
+              </div>
+              <div className={styles.imageStack}>
+                <div className={styles.imageWrap}>
+                  <Image
+                    srcSet={`${findUnpaved} 1400w`}
+                    width={1400}
+                    height={876}
+                    placeholder={findUnpavedPlaceholder}
+                    alt="The Find Unpaved gravel road map"
+                    sizes={imageSizes}
+                  />
+                </div>
+                <div className={styles.imageWrap}>
+                  <Image
+                    srcSet={`${sleepmatWeb} 1400w`}
+                    width={1400}
+                    height={876}
+                    placeholder={sleepmatWebPlaceholder}
+                    alt="SleepMat's offline map of shelter, food, healthcare, and other resources"
+                    sizes={imageSizes}
+                  />
+                </div>
+              </div>
+            </div>
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>
