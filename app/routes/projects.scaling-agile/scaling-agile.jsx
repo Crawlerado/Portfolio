@@ -1,4 +1,9 @@
+import sprintCard from '~/assets/sprint-planning-card.jpg';
+import sprintCardPlaceholder from '~/assets/sprint-planning-card-placeholder.jpg';
+import trainingKanban from '~/assets/training-kanban.jpg';
+import trainingKanbanPlaceholder from '~/assets/training-kanban-placeholder.jpg';
 import { Footer } from '~/components/footer';
+import { Image } from '~/components/image';
 import {
   ProjectContainer,
   ProjectHeader,
@@ -8,13 +13,14 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
+import { media } from '~/utils/style';
 import { Fragment } from 'react';
 import { baseMeta } from '~/utils/meta';
 import styles from './scaling-agile.module.css';
 
 const title = 'Scaling Agile: 20 to 80+ Builders';
 const description =
-  'Agile Coach at Flywheel/WP Engine while the Scrum organization grew fourfold, from 20 builders to 80-plus. At Mutual of Omaha, trained client teams on Agile, Scrum, Kanban, and release planning.';
+  'Agile Coach at Flywheel/WP Engine while the Scrum organization grew fourfold, from 20 builders to 80-plus. At Mutual of Omaha, the primary agile trainer for the company-wide transformation.';
 const roles = ['Agile Coach', 'Scrum Master', 'Training', 'Organizational Scaling'];
 
 export const meta = () => {
@@ -28,23 +34,43 @@ export const ScalingAgile = () => {
         <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection padding="top" className={styles.compactSection}>
           <ProjectSectionContent>
-            <ProjectTextRow width="l" noMargin>
-              <ProjectSectionHeading>Scaling the Organization</ProjectSectionHeading>
-              <ProjectSectionText>
-                In two to three years at Flywheel the Scrum organization went from around
-                20 people running a handful of teams to more than 80 builders. Coaching it
-                through that growth was the second half of my time there, after the
-                product work. I ran the coaching, reshaped team structures as groups
-                split, and built the cross-team coordination a group that size needs. I
-                also coached leaders through the problems that come with fast growth.
-              </ProjectSectionText>
-              <ProjectSectionText>
-                Going from 20 to 80 usually costs a team its working conditions. Keeping
-                that from happening was as much of the job as the structure. Teams kept
-                the autonomy they had at 20, and the coordination we added on top was
-                there to protect it rather than to police it.
-              </ProjectSectionText>
-            </ProjectTextRow>
+            <div className={styles.columns}>
+              <div className={styles.textColumn}>
+                <ProjectTextRow noMargin>
+                  <ProjectSectionHeading>Scaling the Organization</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    In two to three years at Flywheel the Scrum organization went from
+                    around 20 people running a handful of teams to more than 80 builders.
+                    Coaching it through that growth was the second half of my time there,
+                    after the product work. I ran the coaching, reshaped team structures
+                    as groups split, and built the cross-team coordination a group that
+                    size needs. I also coached leaders through the problems that come with
+                    fast growth.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Going from 20 to 80 usually costs a team its working conditions.
+                    Keeping that from happening was as much of the job as the structure.
+                    Teams kept the autonomy they had at 20, and the coordination we added
+                    on top was there to protect it rather than to police it.
+                  </ProjectSectionText>
+                </ProjectTextRow>
+              </div>
+              <figure className={styles.figure}>
+                <div className={styles.imageWrap}>
+                  <Image
+                    srcSet={`${sprintCard} 1460w`}
+                    width={1460}
+                    height={1100}
+                    placeholder={sprintCardPlaceholder}
+                    alt="My Sprint Planning quick card: purpose, timing, attendees, activities, and outcomes"
+                    sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+                  />
+                </div>
+                <figcaption className={styles.caption}>
+                  One of the quick cards I wrote so every team ran ceremonies the same way
+                </figcaption>
+              </figure>
+            </div>
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light className={styles.compactSection}>
@@ -102,14 +128,30 @@ export const ScalingAgile = () => {
         </ProjectSection>
         <ProjectSection className={styles.compactSection}>
           <ProjectSectionContent>
-            <ProjectTextRow width="l" noMargin>
-              <ProjectSectionHeading>Training at Scale</ProjectSectionHeading>
-              <ProjectSectionText>
-                At Mutual of Omaha, I trained thousands of clients on Agile, Scrum,
-                Kanban, and release planning. These were hands-on workshops with practical
-                tools teams could apply right away.
-              </ProjectSectionText>
-            </ProjectTextRow>
+            <div className={styles.columns} data-alternate="true">
+              <div className={styles.textColumn}>
+                <ProjectTextRow noMargin>
+                  <ProjectSectionHeading>Training at Scale</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Across Mutual of Omaha, Flywheel, PetFriendly, and TEAM Software, more
+                    than 1,000 people came through my agile and product training. At
+                    Mutual of Omaha I was the primary trainer for the company&apos;s agile
+                    transformation: hands-on workshops on Scrum, Kanban, and release
+                    planning that teams could use the next day.
+                  </ProjectSectionText>
+                </ProjectTextRow>
+              </div>
+              <div className={styles.imageWrap}>
+                <Image
+                  srcSet={`${trainingKanban} 1400w`}
+                  width={1400}
+                  height={640}
+                  placeholder={trainingKanbanPlaceholder}
+                  alt="A Kanban board tracking an agile training rollout across teams"
+                  sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+                />
+              </div>
+            </div>
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light className={styles.compactSection}>

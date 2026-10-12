@@ -223,7 +223,7 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         title="Scaling Agile: 20 to 80+ Builders"
-        description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. At Mutual of Omaha, I trained client teams on Scrum, Kanban, and release planning."
+        description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. At Mutual of Omaha, I was the primary trainer for the company's agile transformation."
         buttonText="How I scaled it"
         buttonLink="/projects/scaling-agile"
         decorativeLabel="Scaled"
