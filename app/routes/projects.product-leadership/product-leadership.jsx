@@ -246,6 +246,20 @@ export const ProductLeadership = () => {
                     company&apos;s largest objective, delivered by a 23-person product org
                     across three countries.
                   </ProjectSectionText>
+                  <ProjectSectionText>
+                    It ran on a short scorecard built for a subscription business: retention at three and twelve months, average box value,
+                    cross-sell and upsell into a second product, conversion, and customer
+                    NPS. The bet was to keep customers longer and fill more of each box
+                    rather than buy more traffic, while holding a customer NPS of 75
+                    through the move to the new platform.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Customer support shaped the platform as much as engineering did. The
+                    Customer Happiness team&apos;s 41 must-have requirements, from one-off
+                    delivery changes and reships to adverse-event records for prescription
+                    products, decided what customers could now do for themselves and what
+                    still needed a person.
+                  </ProjectSectionText>
                   <div className={styles.link}>
                     <Button
                       secondary
@@ -288,9 +302,10 @@ export const ProductLeadership = () => {
                   </ProjectSectionText>
                   <ProjectSectionText>
                     The shift was from intuition to evidence. Teams learned to start from
-                    the problem instead of the feature: customer interviews, jobs to be
-                    done, prototype tests before code, and success measured in outcomes
-                    over output. Today that goes by continuous discovery, with a product
+                    the problem instead of the feature: qualitative research, jobs to be
+                    done, usability testing on prototypes before any code, experimentation
+                    and A/B tests once it shipped, and success measured in outcomes over
+                    output. Today that goes by continuous discovery, with a product
                     trio of product, design, and engineering working each problem
                     together. The fundamentals underneath are older than the labels.
                   </ProjectSectionText>
