@@ -58,17 +58,14 @@ export const ScalingAgile = () => {
               <figure className={styles.figure}>
                 <div className={styles.imageWrap}>
                   <Image
-                    srcSet={`${sprintCard} 1460w`}
-                    width={1460}
-                    height={1100}
+                    srcSet={`${sprintCard} 1100w`}
+                    width={1100}
+                    height={1424}
                     placeholder={sprintCardPlaceholder}
                     alt="My Sprint Planning quick card: purpose, timing, attendees, activities, and outcomes"
                     sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
                   />
                 </div>
-                <figcaption className={styles.caption}>
-                  One of the quick cards I wrote so every team ran ceremonies the same way
-                </figcaption>
               </figure>
             </div>
           </ProjectSectionContent>

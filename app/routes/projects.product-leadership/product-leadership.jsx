@@ -110,9 +110,6 @@ export const ProductLeadership = () => {
                     sizes={imageSizes}
                   />
                 </div>
-                <figcaption className={styles.caption}>
-                  Mesa Coffee Company on Shopify, ahead of launch
-                </figcaption>
               </figure>
             </div>
             <div className={styles.columns} data-alternate="true" data-stacked="true">
@@ -136,9 +133,6 @@ export const ProductLeadership = () => {
                     sizes={imageSizes}
                   />
                 </div>
-                <figcaption className={styles.caption}>
-                  Oddity Cycles on Shopify, ahead of launch
-                </figcaption>
               </figure>
             </div>
           </ProjectSectionContent>
