@@ -29,7 +29,7 @@ import styles from './product-leadership.module.css';
 
 const title = 'Product Leadership';
 const description =
-  'Ten years of product work, from rebuilding payroll for the security industry to moderating councils of Chief Product Officers. Most recently, helping ecommerce brands grow and thrive.';
+  '10+ years of deep product work and product mentoring, from rebuilding payroll for the security industry to moderating councils of Chief Product Officers. Most recently, helping ecommerce brands grow and thrive.';
 const roles = [
   'Product Strategy',
   'Discovery',
