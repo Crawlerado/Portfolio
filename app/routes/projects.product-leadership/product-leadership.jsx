@@ -83,7 +83,7 @@ export const ProductLeadership = () => {
                   <ProjectSectionText>
                     Ecommerce brands rarely run short of growth ideas. What they lack is
                     a clear picture of how a customer actually gets from a first visit to
-                    a third order. The consulting work starts there: mapping the customer
+                    a third order. My consulting work starts here: mapping the customer
                     journey, reading where buying habits are shifting, and tying each
                     change back to customer lifetime value, the number that decides
                     whether growth pays for itself.
