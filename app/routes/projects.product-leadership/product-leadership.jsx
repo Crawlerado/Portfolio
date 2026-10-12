@@ -90,8 +90,9 @@ export const ProductLeadership = () => {
                   </ProjectSectionText>
                   <ProjectSectionText>
                     For Mesa Coffee Company, that meant a move from Wix to Shopify built
-                    around subscriptions, with every old page redirected so years of
-                    search ranking carried across.
+                    around subscriptions, with a focus on Shopify Collective:
+                    pulling partner brands&apos; products in, and expanding Mesa&apos;s coffee out
+                    to other retailers.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
