@@ -2,9 +2,8 @@ import mesaStore from '~/assets/mesa-store.mp4';
 import mesaStorePlaceholder from '~/assets/mesa-store-placeholder.jpg';
 import oddityStore from '~/assets/oddity-store.mp4';
 import oddityStorePlaceholder from '~/assets/oddity-store-placeholder.jpg';
-import aiDev from '~/assets/ai-dev.jpg';
-import aiDevLarge from '~/assets/ai-dev-large.jpg';
-import aiDevPlaceholder from '~/assets/ai-dev-placeholder.jpg';
+import findUnpaved from '~/assets/find-unpaved.jpg';
+import findUnpavedPlaceholder from '~/assets/find-unpaved-placeholder.jpg';
 import petFriendlyProducts from '~/assets/petfriendly-products.jpg';
 import petFriendlyProductsPlaceholder from '~/assets/petfriendly-products-placeholder.jpg';
 import local from '~/assets/local.jpg';
@@ -144,7 +143,7 @@ export const ProductLeadership = () => {
               <div className={styles.textColumn}>
                 <ProjectTextRow noMargin>
                   <Eyebrow company="Personal products" years="Ongoing" />
-                  <ProjectSectionHeading>Building My Own Products</ProjectSectionHeading>
+                  <ProjectSectionHeading>Building for the Community</ProjectSectionHeading>
                   <ProjectSectionText>
                     The same approach runs through the products I design and build
                     myself, with LLM-based tools as my engineering partner. Crawlerado
@@ -177,11 +176,11 @@ export const ProductLeadership = () => {
               </div>
               <div className={styles.imageWrap}>
                 <Image
-                  srcSet={`${aiDev} 1280w, ${aiDevLarge} 1800w`}
-                  width={1280}
-                  height={460}
-                  placeholder={aiDevPlaceholder}
-                  alt="Three products I built: Find Unpaved, SleepMat, and nathank.build"
+                  srcSet={`${findUnpaved} 1400w`}
+                  width={1400}
+                  height={876}
+                  placeholder={findUnpavedPlaceholder}
+                  alt="The Find Unpaved gravel road map"
                   sizes={imageSizes}
                 />
               </div>
