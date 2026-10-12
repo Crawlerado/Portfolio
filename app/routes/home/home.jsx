@@ -32,6 +32,22 @@ import styles from './home.module.css';
 
 // Hidden until the Flywheel case study is finished.
 const SHOW_FLYWHEEL = false;
+// Hidden: the shipped sites now live on the Product Leadership page.
+const SHOW_BUILDING = false;
+
+// Card numbers and the left/right alternation follow the visible order.
+const CARD_ORDER = [
+  'project-1',
+  SHOW_BUILDING && 'project-2',
+  'project-3',
+  SHOW_FLYWHEEL && 'project-4',
+  'project-5',
+  'project-6',
+  'project-7',
+  'project-8',
+].filter(Boolean);
+const cardIndex = id => CARD_ORDER.indexOf(id) + 1;
+const cardAlternate = id => cardIndex(id) % 2 === 0;
 
 export const meta = () => {
   return baseMeta({
@@ -100,9 +116,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        alternate={cardAlternate('project-1')}
+        index={cardIndex('project-1')}
         sectionRef={productLeadershipRef}
         visible={visibleSections.includes(productLeadershipRef.current)}
-        index={1}
         title="Product Leadership"
         description="Ten years of owning products end to end: Mutual of Omaha's first big data platform, Local and Local Pro at Flywheel, and an executive product ecosystem at Products That Count, where program engagement doubled. Along the way, founded and chaired a Product Management Community of Practice and mentored and trained more than 1,000 people in modern product practice."
         buttonText="How I lead product"
@@ -122,34 +139,37 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={2}
-        title="Building and Shipping Products"
-        description="Live sites and apps I designed and shipped: nathank.build, odditycycles.com, crawlerado.com and its Find Unpaved gravel map, sleepmat.app, and hellokristin.co. I write the code, using LLM-based tools as my engineering partner."
-        buttonText="View projects"
-        buttonLink="/projects/ai-development"
-        decorativeLabel="Shipped"
-        model={{
-          alt: 'Three sites I built and shipped: Find Unpaved, SleepMat, and nathank.build',
-          imageScale: 1,
-          imageOffsetY: '0%',
-          textures: [
-            {
-              srcSet: `${aiDev} 1280w, ${aiDevLarge} 1800w`,
-              placeholder: aiDevPlaceholder,
-            },
-          ],
-        }}
-      />
+      {SHOW_BUILDING && (
+        <ProjectSummary
+          id="project-2"
+          alternate={cardAlternate('project-2')}
+          index={cardIndex('project-2')}
+          sectionRef={projectOne}
+          visible={visibleSections.includes(projectOne.current)}
+          title="Building and Shipping Products"
+          description="Live sites and apps I designed and shipped: nathank.build, odditycycles.com, crawlerado.com and its Find Unpaved gravel map, sleepmat.app, and hellokristin.co. I write the code, using LLM-based tools as my engineering partner."
+          buttonText="View projects"
+          buttonLink="/projects/ai-development"
+          decorativeLabel="Shipped"
+          model={{
+            alt: 'Three sites I built and shipped: Find Unpaved, SleepMat, and nathank.build',
+            imageScale: 1,
+            imageOffsetY: '0%',
+            textures: [
+              {
+                srcSet: `${aiDev} 1280w, ${aiDevLarge} 1800w`,
+                placeholder: aiDevPlaceholder,
+              },
+            ],
+          }}
+        />
+      )}
       <ProjectSummary
         id="project-3"
+        alternate={cardAlternate('project-3')}
+        index={cardIndex('project-3')}
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={3}
         previewMaxWidth="450px"
         title="PetFriendly: Chief of Staff"
         description="Co-ran a pet wellness startup with the CEO. Led a 23-person product org across three countries, ran operations and the leadership team, and together we tripled the product offering."
@@ -172,10 +192,10 @@ export const Home = () => {
       {SHOW_FLYWHEEL && (
         <ProjectSummary
           id="project-4"
-          alternate
+          alternate={cardAlternate('project-4')}
+          index={cardIndex('project-4')}
           sectionRef={projectThree}
           visible={visibleSections.includes(projectThree.current)}
-          index={4}
           title="Flywheel: Product Leadership"
           description="Led product and delivery on Flywheel's developer tools: Local, the desktop app WordPress developers build on, Local Pro from discovery through launch, and the Cloud Platform team through a move to Kubernetes."
           buttonText="How I led it"
@@ -198,10 +218,10 @@ export const Home = () => {
       )}
       <ProjectSummary
         id="project-5"
-        alternate={!SHOW_FLYWHEEL}
+        alternate={cardAlternate('project-5')}
+        index={cardIndex('project-5')}
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
-        index={SHOW_FLYWHEEL ? 5 : 4}
         title="Scaling Agile: 20 to 80+ Builders"
         description="As Agile Coach at Flywheel/WP Engine, I ran the coaching and team structure while the Scrum org grew from 20 to 80-plus builders. At Mutual of Omaha, I trained client teams on Scrum, Kanban, and release planning."
         buttonText="How I scaled it"
@@ -219,10 +239,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-6"
-        alternate={SHOW_FLYWHEEL}
+        alternate={cardAlternate('project-6')}
+        index={cardIndex('project-6')}
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
-        index={SHOW_FLYWHEEL ? 6 : 5}
         title="Giving Back"
         description="Board leadership, mentoring the same kid for nine years, food drives, and shelter volunteering. Showing up matters."
         buttonText="See the work"
@@ -240,10 +260,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-7"
-        alternate={!SHOW_FLYWHEEL}
+        alternate={cardAlternate('project-7')}
+        index={cardIndex('project-7')}
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
-        index={SHOW_FLYWHEEL ? 7 : 6}
         title="Crawlerado Bikepacking"
         description="A bikepacking community I started in Northern Colorado, plus the web app behind it: interactive gravel-road discovery, gear checklists, and ride planning. I design, build, and maintain it."
         buttonText="Visit crawlerado.com"
@@ -262,10 +282,10 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-8"
-        alternate={SHOW_FLYWHEEL}
+        alternate={cardAlternate('project-8')}
+        index={cardIndex('project-8')}
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectSeven.current)}
-        index={SHOW_FLYWHEEL ? 8 : 7}
         overlay={<AudioWaveform />}
         title="Audio Engineer"
         description="Before product, I made records. Engineering, mixing, mastering, and session work on 50-plus releases across the Midwest."

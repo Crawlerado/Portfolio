@@ -2,8 +2,9 @@ import mesaStore from '~/assets/mesa-store.mp4';
 import mesaStorePlaceholder from '~/assets/mesa-store-placeholder.jpg';
 import oddityStore from '~/assets/oddity-store.mp4';
 import oddityStorePlaceholder from '~/assets/oddity-store-placeholder.jpg';
-import findUnpaved from '~/assets/find-unpaved.jpg';
-import findUnpavedPlaceholder from '~/assets/find-unpaved-placeholder.jpg';
+import aiDev from '~/assets/ai-dev.jpg';
+import aiDevLarge from '~/assets/ai-dev-large.jpg';
+import aiDevPlaceholder from '~/assets/ai-dev-placeholder.jpg';
 import petFriendlyProducts from '~/assets/petfriendly-products.jpg';
 import petFriendlyProductsPlaceholder from '~/assets/petfriendly-products-placeholder.jpg';
 import local from '~/assets/local.jpg';
@@ -12,6 +13,7 @@ import localPlaceholder from '~/assets/local-placeholder.jpg';
 import { Button } from '~/components/button';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
+import { Link } from '~/components/link';
 import {
   ProjectContainer,
   ProjectHeader,
@@ -28,7 +30,7 @@ import styles from './product-leadership.module.css';
 
 const title = 'Product Leadership';
 const description =
-  'Ten years of product work, from rebuilding payroll for the security industry to moderating councils of Chief Product Officers. Six chapters, newest first.';
+  'Ten years of product work, from rebuilding payroll for the security industry to moderating councils of Chief Product Officers. Most recently, helping ecommerce brands grow and thrive.';
 const roles = [
   'Product Strategy',
   'Discovery',
@@ -141,29 +143,44 @@ export const ProductLeadership = () => {
               <div className={styles.textColumn}>
                 <ProjectTextRow noMargin>
                   <Eyebrow company="Personal products" years="Ongoing" />
-                  <ProjectSectionHeading>Building for the Community</ProjectSectionHeading>
+                  <ProjectSectionHeading>Building My Own Products</ProjectSectionHeading>
                   <ProjectSectionText>
-                    The same approach runs through my own products. Crawlerado started as
-                    a bikepacking group in Northern Colorado and now has more than 70
-                    members who ride together in person. Find Unpaved takes that need
-                    worldwide: a map of gravel and dirt roads for riders planning routes
-                    far from home.
+                    The same approach runs through the products I design and build
+                    myself, with LLM-based tools as my engineering partner. Crawlerado
+                    started as a bikepacking group in Northern Colorado and now has more
+                    than 70 members who ride together in person, with{' '}
+                    <Link href="https://crawlerado.com">crawlerado.com</Link> as its home
+                    base.{' '}
+                    <Link href="https://crawlerado.com/explore">Find Unpaved</Link> takes
+                    that need worldwide: a map of gravel and dirt roads, built on a
+                    pipeline that turns OpenStreetMap data into vector tiles, with a
+                    self-hosted routing engine behind it.
                   </ProjectSectionText>
                   <ProjectSectionText>
-                    SleepMat came out of conversations with community leaders who work
-                    with people without housing. It is a survival guide to shelter, food,
-                    water, and restrooms that works offline, because the people who need
-                    it most are often the ones without a signal or a data plan.
+                    <Link href="https://sleepmat.app">SleepMat</Link> came out of
+                    conversations with community leaders who work with people without
+                    housing. It finds shelter, food, showers, and healthcare with no
+                    signal and no account, because the people who need it most are often
+                    the ones without a data plan. Listings come from federal and municipal
+                    sources and ship inside the app, so the first launch works on a dead
+                    connection.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Two portfolio sites share one component foundation:{' '}
+                    <Link href="https://hellokristin.co">hellokristin.co</Link>, which
+                    brings a communications professional&apos;s writing, campaigns, and
+                    travel photography into one place, and nathank.build, the site
+                    you&apos;re reading.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </div>
               <div className={styles.imageWrap}>
                 <Image
-                  srcSet={`${findUnpaved} 1400w`}
-                  width={1400}
-                  height={876}
-                  placeholder={findUnpavedPlaceholder}
-                  alt="The Find Unpaved gravel road map"
+                  srcSet={`${aiDev} 1280w, ${aiDevLarge} 1800w`}
+                  width={1280}
+                  height={460}
+                  placeholder={aiDevPlaceholder}
+                  alt="Three products I built: Find Unpaved, SleepMat, and nathank.build"
                   sizes={imageSizes}
                 />
               </div>
